@@ -1,0 +1,174 @@
+{
+	"name": "E Pengulangan 1-va_i",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 380914003717278
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 998752755556044,
+					"parameters": {
+						"instance-variable": "UkuranX",
+						"value": "Self.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 561829546780348,
+					"parameters": {
+						"instance-variable": "UkuranY",
+						"value": "Self.Height"
+					}
+				}
+			],
+			"sid": 608098693210546
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 317266622374126,
+					"parameters": {
+						"object": "ButtonHijau_Home1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 482841516324927,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.UkuranX +30",
+						"end-y": "Self.UkuranY +30",
+						"time": "0.1",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 106310452802629
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 178561776924112
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "JariPointer",
+					"sid": 628800937932956,
+					"parameters": {
+						"x": "1454"
+					}
+				}
+			],
+			"sid": 916243059468050
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 930396813252949,
+					"parameters": {
+						"object": "Button_Maju1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Button_Maju1",
+					"sid": 212863144173315
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 348027588476501,
+					"parameters": {
+						"layout": "Pengulangan 1-va_j"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 161047720063418,
+					"parameters": {
+						"audio-file": "Correct Sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 615828621760317
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 765296332537870,
+					"parameters": {
+						"object": "Button_Mundur1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Button_Mundur1",
+					"sid": 125912199209547
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 501666283646402,
+					"parameters": {
+						"layout": "Pengulangan 1-va_h"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 167773950609967,
+					"parameters": {
+						"audio-file": "negative_beeps-6008",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 123343318868588
+		}
+	],
+	"sid": 226957566067626
+}

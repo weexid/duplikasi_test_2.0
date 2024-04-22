@@ -1,0 +1,190 @@
+{
+	"name": "11_E Baca Kata 2-za_a2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 885286314243002
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 631164985003952,
+					"parameters": {
+						"instance-variable": "UkuranX",
+						"value": "Self.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 246650724065017,
+					"parameters": {
+						"instance-variable": "UkuranY",
+						"value": "Self.Height"
+					}
+				}
+			],
+			"sid": 682524253688695
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 426518047669389,
+					"parameters": {
+						"object": "ButtonHijau_Home1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 117407094769403,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.UkuranX +30",
+						"end-y": "Self.UkuranY +30",
+						"time": "0.1",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 679646318644171
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 507882121923876
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer",
+					"sid": 298482473764724,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "JariPointer",
+					"sid": 218397976001421,
+					"parameters": {
+						"x": "637"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Button_Mundur1",
+					"sid": 812944685790950,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Button_Maju1",
+					"sid": 197528030773531,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 246139417522428
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 129799076725683,
+					"parameters": {
+						"object": "Button_Maju1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Button_Maju1",
+					"sid": 323478310728254
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 652252430306493,
+					"parameters": {
+						"layout": "11_Baca Kata 2-za_b"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 621811232883807,
+					"parameters": {
+						"audio-file": "Correct Sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 205233138367619
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 270412469606963,
+					"parameters": {
+						"object": "Button_Mundur1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Button_Mundur1",
+					"sid": 195768198202657
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 842996321653378,
+					"parameters": {
+						"audio-file": "negative_beeps-6008",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 550833224909356
+		}
+	],
+	"sid": 987095413528086
+}

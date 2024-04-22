@@ -1,0 +1,294 @@
+{
+	"name": "E Intro_Kaka",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 100166643254023
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Sprite_Kaka_Jalan",
+					"sid": 762174213191333,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"walkcenter\"",
+						"property": "position",
+						"end-x": "650",
+						"end-y": "860",
+						"time": "5",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 316707959385080,
+					"disabled": true,
+					"parameters": {
+						"audio-file": "Bg Music Flat",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Button_Start_intro",
+					"sid": 621958316135970,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite_Kaka_Jalan",
+					"sid": 954536988062775,
+					"parameters": {
+						"animation": "\"walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_Pointer_intro",
+					"sid": 439011002760782,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 734413337949840
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "Sprite_Kaka_Jalan",
+					"sid": 908638112883899,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"walkcenter\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite_Kaka_Jalan",
+					"sid": 112371561550211,
+					"parameters": {
+						"animation": "\"idle2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Button_Start_intro",
+					"sid": 727337110440707,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_Pointer_intro",
+					"sid": 490370096864495,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 372743867699900
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 949324407457777,
+					"parameters": {
+						"object": "Button_Start_intro"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Button_Start_intro",
+					"sid": 202548437305776
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite_Kaka_Jalan",
+					"sid": 723005232915975,
+					"parameters": {
+						"animation": "\"idle_wave_hallo\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 547845327483690,
+					"parameters": {
+						"audio-file": "2 kaka voice",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"kaka hallo\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Button_Start_intro",
+					"sid": 558756868970690,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_Pointer_intro",
+					"sid": 787655630078799,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 138756597742900
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 445411984045087,
+					"parameters": {
+						"tag": "\"kaka hallo\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Sprite_Kaka_Jalan",
+					"sid": 520449354132688,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"walkout\"",
+						"property": "position",
+						"end-x": "2000",
+						"end-y": "816",
+						"time": "7",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite_Kaka_Jalan",
+					"sid": 221451395862298,
+					"parameters": {
+						"animation": "\"walk_2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 999287516810098
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "Sprite_Kaka_Jalan",
+					"sid": 618474081633751,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"walkout\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 188090656112248,
+					"parameters": {
+						"layout": "Intro_Binatang"
+					}
+				}
+			],
+			"sid": 724590083037016
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 958101575961333,
+					"parameters": {
+						"object": "StartButton_Hijau"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "StartButton_Hijau",
+					"sid": 689113734688313,
+					"parameters": {
+						"animation": "\"klik\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 147168866189144
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 607924807108469,
+					"parameters": {
+						"object": "StartButton_Hijau"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "StartButton_Hijau",
+					"sid": 941931256329439,
+					"parameters": {
+						"animation": "\"normal\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 449463258285909
+		}
+	],
+	"sid": 947160143518869
+}

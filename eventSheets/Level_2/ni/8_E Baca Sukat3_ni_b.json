@@ -1,0 +1,182 @@
+{
+	"name": "8_E Baca Sukat3_ni_b",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 709139204033701
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 892296284137076,
+					"parameters": {
+						"instance-variable": "UkuranX",
+						"value": "Self.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 629130447919009,
+					"parameters": {
+						"instance-variable": "UkuranY",
+						"value": "Self.Height"
+					}
+				}
+			],
+			"sid": 561403138267384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 949997616511001,
+					"parameters": {
+						"object": "ButtonHijau_Home1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 929549815213915,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.UkuranX +30",
+						"end-y": "Self.UkuranY +30",
+						"time": "0.1",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 778322317240016
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 245480517197736
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer",
+					"sid": 596235243517028,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "JariPointer",
+					"sid": 841997709000113,
+					"parameters": {
+						"x": "516"
+					}
+				}
+			],
+			"sid": 758669770811377
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 612732531898856,
+					"parameters": {
+						"object": "Button_Maju1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Button_Maju1",
+					"sid": 270855311359075
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 436114805179697,
+					"parameters": {
+						"audio-file": "Correct Sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 330343405188057,
+					"parameters": {
+						"layout": "8_Baca Sukat3_ni_c"
+					}
+				}
+			],
+			"sid": 255172792270918
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 453264164949761,
+					"parameters": {
+						"object": "Button_Mundur1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Button_Mundur1",
+					"sid": 110280243174084
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 167470716651530,
+					"parameters": {
+						"audio-file": "negative_beeps-6008",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 644083151577695,
+					"parameters": {
+						"layout": "8_Baca Sukat3_ni_a2"
+					}
+				}
+			],
+			"sid": 272739504094993
+		}
+	],
+	"sid": 169116062875471
+}

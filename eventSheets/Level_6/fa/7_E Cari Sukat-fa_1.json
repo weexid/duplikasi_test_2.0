@@ -1,0 +1,1068 @@
+{
+	"name": "7_E Cari Sukat-fa_1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 123726608567201
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 944658283070491,
+					"parameters": {
+						"instance-variable": "UkuranX",
+						"value": "Self.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 838822555642395,
+					"parameters": {
+						"instance-variable": "UkuranY",
+						"value": "Self.Height"
+					}
+				}
+			],
+			"sid": 469350225151807
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 916290378494877,
+					"parameters": {
+						"object": "ButtonHijau_Home1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 803175903079481,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.UkuranX +30",
+						"end-y": "Self.UkuranY +30",
+						"time": "0.1",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 500361842775473
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 212207226730597,
+					"parameters": {
+						"object": "Tombol_Salah1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-font-color",
+					"objectClass": "Cari1",
+					"sid": 275058090236123,
+					"disabled": true,
+					"parameters": {
+						"color": "rgb(186, 188, 190)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 371193205011072,
+					"parameters": {
+						"audio-file": "negative_beeps-6008",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 992255585837106
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 628462078309051
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "StartButton_Hijau",
+					"sid": 150784109167067,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ButtonHijau_Next",
+					"sid": 533010635005454,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari1",
+					"sid": 584931770663114,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari2",
+					"sid": 831059265084773,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari3",
+					"sid": 325242942376118,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari4",
+					"sid": 763915852472752,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari5",
+					"sid": 837145256642792,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari6",
+					"sid": 826971089341784,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari7",
+					"sid": 530524517516628,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari8",
+					"sid": 568640251488876,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari9",
+					"sid": 937058490535515,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari10",
+					"sid": 642398926060839,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari11",
+					"sid": 812332160595769,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FrameCari",
+					"sid": 394259482714946,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 378341854669233
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 109032521173185,
+					"parameters": {
+						"object": "StartButton_Hijau"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "StartButton_Hijau",
+					"sid": 534710940092487
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 334021582122164,
+					"parameters": {
+						"audio-file": "Ayo cari yg mana fa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"cari fa\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "StartButton_Hijau",
+					"sid": 749861242027645,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari1",
+					"sid": 678138517780542,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari2",
+					"sid": 121944185828392,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari3",
+					"sid": 870532830821217,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari4",
+					"sid": 511038089244117,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari5",
+					"sid": 601278872741512,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari6",
+					"sid": 987416731640483,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari7",
+					"sid": 873167862657942,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari8",
+					"sid": 502662149701657,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari9",
+					"sid": 881753202130788,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari10",
+					"sid": 548505529583508,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari11",
+					"sid": 602917100954190,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FrameCari",
+					"sid": 720669082795896,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 641003579134312
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 990071039440366,
+					"parameters": {
+						"object": "Cari1"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari1",
+					"sid": 425026965609194,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari1",
+					"sid": 222046412361222
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari1",
+					"sid": 604048854292540,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 422300346995737,
+					"parameters": {
+						"instance-variable": "Total_i",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "Cari1",
+					"sid": 460296165342314,
+					"parameters": {
+						"color": "rgb(232, 36, 41)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 781554479892388,
+					"parameters": {
+						"audio-file": "Correct Sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 212702574169093
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 914133446085681,
+					"parameters": {
+						"object": "Cari2"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari2",
+					"sid": 344104217603622
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari2",
+					"sid": 742073419382957,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari2",
+					"sid": 838656850888765,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 945132870249772,
+					"parameters": {
+						"instance-variable": "Total_i",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "Cari2",
+					"sid": 929984149065399,
+					"parameters": {
+						"color": "rgb(232, 36, 41)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 348216941822330,
+					"parameters": {
+						"audio-file": "Correct Sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 280336511907127
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 877922114582079,
+					"parameters": {
+						"object": "Cari3"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari3",
+					"sid": 561036497092943
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 786557212376125,
+					"parameters": {
+						"audio-file": "negative_beeps-6008",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 960006067347409
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 933455882463980,
+					"parameters": {
+						"object": "Cari4"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari4",
+					"sid": 999210760429429,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari4",
+					"sid": 923926224317820
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari4",
+					"sid": 239394603629060,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 900183947457934,
+					"parameters": {
+						"instance-variable": "Total_i",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "Cari4",
+					"sid": 721742674261056,
+					"parameters": {
+						"color": "rgb(232, 36, 41)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 777550991558022,
+					"parameters": {
+						"audio-file": "Correct Sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 265573987713555
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 840924862480718,
+					"parameters": {
+						"object": "Cari5"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari5",
+					"sid": 853089871182518
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari5",
+					"sid": 239225834786582,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari5",
+					"sid": 961205819632300,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 426559920141303,
+					"parameters": {
+						"instance-variable": "Total_i",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "Cari5",
+					"sid": 330474558430656,
+					"parameters": {
+						"color": "rgb(232, 36, 41)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 607987676665235,
+					"parameters": {
+						"audio-file": "Correct Sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 972735873418792
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 339014436057048,
+					"parameters": {
+						"object": "Cari6"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari6",
+					"sid": 177280848394909,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari6",
+					"sid": 178515913699161
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari6",
+					"sid": 996334177592179,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 401011361329331,
+					"parameters": {
+						"instance-variable": "Total_i",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "Cari6",
+					"sid": 425063992265780,
+					"parameters": {
+						"color": "rgb(232, 36, 41)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 439696440499054,
+					"parameters": {
+						"audio-file": "Correct Sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 909929194931844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 638574357389206,
+					"parameters": {
+						"object": "Cari7"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari7",
+					"sid": 317853222073268
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 116272718977715,
+					"parameters": {
+						"audio-file": "negative_beeps-6008",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 407248154436843
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 540039784761240,
+					"parameters": {
+						"object": "Cari8"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari8",
+					"sid": 901814738941699,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari8",
+					"sid": 110814655147362
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari8",
+					"sid": 831014821124467,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 219341597954887,
+					"parameters": {
+						"instance-variable": "Total_i",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "Cari8",
+					"sid": 169907585156628,
+					"parameters": {
+						"color": "rgb(232, 36, 41)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 802963551792192,
+					"parameters": {
+						"audio-file": "Correct Sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 946652752453773
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 578413510374988,
+					"parameters": {
+						"object": "Cari9"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari9",
+					"sid": 141084377077184
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 723265605852077,
+					"parameters": {
+						"audio-file": "negative_beeps-6008",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 438967893852318
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 335081546443851,
+					"parameters": {
+						"object": "Cari10"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari10",
+					"sid": 595736977949652,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari10",
+					"sid": 598874564896216
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari10",
+					"sid": 695009369523222,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 488961121851554,
+					"parameters": {
+						"instance-variable": "Total_i",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "Cari10",
+					"sid": 536433402808840,
+					"parameters": {
+						"color": "rgb(232, 36, 41)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 410002027027121,
+					"parameters": {
+						"audio-file": "Correct Sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 859909068989126
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 929990851964694,
+					"parameters": {
+						"object": "Cari11"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari11",
+					"sid": 812703877451505,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari11",
+					"sid": 326770396587044
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari11",
+					"sid": 806556180500557,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 782374483918147,
+					"parameters": {
+						"instance-variable": "Total_i",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "Cari11",
+					"sid": 744219680981321,
+					"parameters": {
+						"color": "rgb(232, 36, 41)"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 930643141448135,
+					"parameters": {
+						"audio-file": "Correct Sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 304660018170626
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 383932093054857,
+					"parameters": {
+						"object": "ButtonHijau_Next"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "ButtonHijau_Next",
+					"sid": 498487856285073
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 575631243524758,
+					"parameters": {
+						"layout": "7_Baca Sukat1-fa_1a"
+					}
+				}
+			],
+			"sid": 212685502748752
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 594322010915309,
+					"parameters": {
+						"instance-variable": "Total_i",
+						"comparison": 0,
+						"value": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ButtonHijau_Next",
+					"sid": 730525755869710,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 427029568039535
+		}
+	],
+	"sid": 988436402976531
+}

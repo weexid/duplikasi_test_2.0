@@ -1,0 +1,246 @@
+{
+	"name": "E Teach-ka",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 795583344489872
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ka",
+					"sid": 341197836113592,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ka",
+					"sid": 568852250049644,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_ka",
+					"sid": 263872114942502,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_ka",
+					"sid": 424868295002450,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 110431953163406,
+					"parameters": {
+						"audio-file": "1 Teach ka",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 1\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_teach_ka",
+					"sid": 603712447153256,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Line_huruf_k",
+					"sid": 160014331764012,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 110954820812793
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 168349119093879,
+					"parameters": {
+						"tag": "\"teach 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Line_huruf_k",
+					"sid": 681609721563967,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "Line_huruf_k",
+					"sid": 575786927207717,
+					"parameters": {
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_ka",
+					"sid": 215226458300816,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ka",
+					"sid": 548511188170129,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_ka",
+					"sid": 986739996502243,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 208385050101908,
+					"parameters": {
+						"audio-file": "2 teach ka",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 2\""
+					}
+				}
+			],
+			"sid": 537086010041647
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 361197491357019,
+					"parameters": {
+						"tag": "\"teach 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_teach_ka",
+					"sid": 858483616195766,
+					"parameters": {
+						"animation": "\"hebat\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 291154701390689,
+					"parameters": {
+						"audio-file": "3 teach ka ending",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 3\""
+					}
+				}
+			],
+			"sid": 932772802110032
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 250389596137581,
+					"parameters": {
+						"tag": "\"teach 3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_teach_ka",
+					"sid": 249996796018789,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ka",
+					"sid": 670700453255609,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 525775364921573
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 819781457672313,
+					"parameters": {
+						"object": "Next_ka"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_ka",
+					"sid": 520794370725143
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 936738911513979,
+					"parameters": {
+						"layout": "Catch-la"
+					}
+				}
+			],
+			"sid": 595380339563270
+		}
+	],
+	"sid": 659787133499762
+}

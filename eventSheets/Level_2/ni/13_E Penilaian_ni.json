@@ -1,0 +1,1677 @@
+{
+	"name": "13_E Penilaian_ni",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 169952972972891
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 112440043632426,
+					"parameters": {
+						"instance-variable": "UkuranX",
+						"value": "Self.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 558344934995930,
+					"parameters": {
+						"instance-variable": "UkuranY",
+						"value": "Self.Height"
+					}
+				}
+			],
+			"sid": 623214880152093
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 669793515819122,
+					"parameters": {
+						"object": "ButtonHijau_Home1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 801009988292234,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.UkuranX +30",
+						"end-y": "Self.UkuranY +30",
+						"time": "0.1",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 993869552679284
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 223955134538349
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang_Ratarata1",
+					"sid": 107658436949795,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang_Ratarata2",
+					"sid": 960397594143842,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang_Ratarata3",
+					"sid": 596017290497941,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang_Ratarata4",
+					"sid": 339292163869705,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang_Ratarata5",
+					"sid": 450932329695495,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ButtonHijau_Next",
+					"sid": 669311712244032,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 389049175222931
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 526702461844104,
+					"parameters": {
+						"object": "Bintang_Ratarata1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Bintang_Ratarata1",
+					"sid": 803806938659821
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata2",
+					"sid": 396259315438366,
+					"parameters": {
+						"animation": "\"abu2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata3",
+					"sid": 733329568485687,
+					"parameters": {
+						"animation": "\"abu3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata4",
+					"sid": 246484401658029,
+					"parameters": {
+						"animation": "\"abu4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata5",
+					"sid": 574610580341474,
+					"parameters": {
+						"animation": "\"abu5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata1",
+					"sid": 799070179274651,
+					"parameters": {
+						"animation": "\"kuning1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ButtonHijau_Next",
+					"sid": 246909673905912,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 749863314205096
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 687130858119693,
+					"parameters": {
+						"object": "Bintang_Ratarata2"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Bintang_Ratarata2",
+					"sid": 886740900627227
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata3",
+					"sid": 468492502801969,
+					"parameters": {
+						"animation": "\"abu3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata4",
+					"sid": 149164432361061,
+					"parameters": {
+						"animation": "\"abu4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata5",
+					"sid": 600958313539525,
+					"parameters": {
+						"animation": "\"abu5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata1",
+					"sid": 806130550607955,
+					"parameters": {
+						"animation": "\"kuning1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata2",
+					"sid": 219681580511222,
+					"parameters": {
+						"animation": "\"kuning2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ButtonHijau_Next",
+					"sid": 646585305279610,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 670988403857342
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 100291619267742,
+					"parameters": {
+						"object": "Bintang_Ratarata3"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Bintang_Ratarata3",
+					"sid": 526108265460334
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata4",
+					"sid": 863661208291667,
+					"parameters": {
+						"animation": "\"abu4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata5",
+					"sid": 596088298175347,
+					"parameters": {
+						"animation": "\"abu5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata1",
+					"sid": 246141697912079,
+					"parameters": {
+						"animation": "\"kuning1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata2",
+					"sid": 929285242452262,
+					"parameters": {
+						"animation": "\"kuning2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata3",
+					"sid": 584007548188991,
+					"parameters": {
+						"animation": "\"kuning3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ButtonHijau_Next",
+					"sid": 954596596514970,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 838731310451230
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 583556464646020,
+					"parameters": {
+						"object": "Bintang_Ratarata4"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Bintang_Ratarata4",
+					"sid": 107668878166551
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata5",
+					"sid": 267516660883674,
+					"parameters": {
+						"animation": "\"abu5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata1",
+					"sid": 599181880453052,
+					"parameters": {
+						"animation": "\"kuning1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata2",
+					"sid": 297172818702839,
+					"parameters": {
+						"animation": "\"kuning2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata3",
+					"sid": 363347061202886,
+					"parameters": {
+						"animation": "\"kuning3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata4",
+					"sid": 950404889036316,
+					"parameters": {
+						"animation": "\"kuning4\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 832125469421064
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 421400338606680,
+					"parameters": {
+						"object": "Bintang_Ratarata5"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Bintang_Ratarata5",
+					"sid": 616670995561975
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata1",
+					"sid": 180011559815728,
+					"parameters": {
+						"animation": "\"kuning1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata2",
+					"sid": 326506573002998,
+					"parameters": {
+						"animation": "\"kuning2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata3",
+					"sid": 706857692328534,
+					"parameters": {
+						"animation": "\"kuning3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata4",
+					"sid": 961831610004856,
+					"parameters": {
+						"animation": "\"kuning4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_Ratarata5",
+					"sid": 670797582859118,
+					"parameters": {
+						"animation": "\"kuning5\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 740094342326432
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 276760403895350,
+					"parameters": {
+						"object": "Bintang_PahamMat1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat2",
+					"sid": 167631533558499,
+					"parameters": {
+						"animation": "\"paham2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat3",
+					"sid": 874338259961969,
+					"parameters": {
+						"animation": "\"paham3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat4",
+					"sid": 691792492420291,
+					"parameters": {
+						"animation": "\"paham4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat5",
+					"sid": 844957681332489,
+					"parameters": {
+						"animation": "\"paham5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat1",
+					"sid": 155829085815333,
+					"parameters": {
+						"animation": "\"paham1a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 682722268441974
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 866275926588535,
+					"parameters": {
+						"object": "Bintang_PahamMat2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat3",
+					"sid": 950312424198774,
+					"parameters": {
+						"animation": "\"paham3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat4",
+					"sid": 307591399276253,
+					"parameters": {
+						"animation": "\"paham4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat5",
+					"sid": 157061607212857,
+					"parameters": {
+						"animation": "\"paham5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat1",
+					"sid": 127373398546622,
+					"parameters": {
+						"animation": "\"paham1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat2",
+					"sid": 766738790691769,
+					"parameters": {
+						"animation": "\"paham2a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 657777926577036
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 969523749203999,
+					"parameters": {
+						"object": "Bintang_PahamMat3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat4",
+					"sid": 598870225028756,
+					"parameters": {
+						"animation": "\"paham4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat5",
+					"sid": 548485343867596,
+					"parameters": {
+						"animation": "\"paham5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat1",
+					"sid": 238025615195859,
+					"parameters": {
+						"animation": "\"paham1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat2",
+					"sid": 831455072987531,
+					"parameters": {
+						"animation": "\"paham2a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat3",
+					"sid": 992459676840278,
+					"parameters": {
+						"animation": "\"paham3a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 542878979173251
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 590346878663099,
+					"parameters": {
+						"object": "Bintang_PahamMat4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat5",
+					"sid": 359176179761960,
+					"parameters": {
+						"animation": "\"paham5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat1",
+					"sid": 876798630259737,
+					"parameters": {
+						"animation": "\"paham1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat2",
+					"sid": 667500261165118,
+					"parameters": {
+						"animation": "\"paham2a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat3",
+					"sid": 201228301551137,
+					"parameters": {
+						"animation": "\"paham3a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat4",
+					"sid": 995288019829722,
+					"parameters": {
+						"animation": "\"paham4a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 387510648126751
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 299699656681165,
+					"parameters": {
+						"object": "Bintang_PahamMat5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat1",
+					"sid": 907886685200054,
+					"parameters": {
+						"animation": "\"paham1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat2",
+					"sid": 208376403101924,
+					"parameters": {
+						"animation": "\"paham2a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat3",
+					"sid": 277692031515082,
+					"parameters": {
+						"animation": "\"paham3a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat4",
+					"sid": 975798577973521,
+					"parameters": {
+						"animation": "\"paham4a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat5",
+					"sid": 572664573558743,
+					"parameters": {
+						"animation": "\"paham5a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 809258061524587
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 511217982428389,
+					"parameters": {
+						"object": "Bintang_CaraBaca1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca2",
+					"sid": 521445244931491,
+					"parameters": {
+						"animation": "\"carabaca2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca3",
+					"sid": 566042623204925,
+					"parameters": {
+						"animation": "\"carabaca3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca4",
+					"sid": 583734472523988,
+					"parameters": {
+						"animation": "\"carabaca4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca5",
+					"sid": 141067005052795,
+					"parameters": {
+						"animation": "\"carabaca5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca1",
+					"sid": 503138934980118,
+					"parameters": {
+						"animation": "\"carabaca1a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 458921363249364
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 526454795083514,
+					"parameters": {
+						"object": "Bintang_CaraBaca2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca3",
+					"sid": 559380594592410,
+					"parameters": {
+						"animation": "\"carabaca3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca4",
+					"sid": 708528095968282,
+					"parameters": {
+						"animation": "\"carabaca4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca5",
+					"sid": 249220028243695,
+					"parameters": {
+						"animation": "\"carabaca5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca1",
+					"sid": 220722282594675,
+					"parameters": {
+						"animation": "\"carabaca1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca2",
+					"sid": 866237666330752,
+					"parameters": {
+						"animation": "\"carabaca2a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 958699590593991
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 895655560640728,
+					"parameters": {
+						"object": "Bintang_CaraBaca3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca4",
+					"sid": 679971822074647,
+					"parameters": {
+						"animation": "\"carabaca4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca5",
+					"sid": 322000949619900,
+					"parameters": {
+						"animation": "\"carabaca5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca1",
+					"sid": 443084836207352,
+					"parameters": {
+						"animation": "\"carabaca1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca2",
+					"sid": 511313939983964,
+					"parameters": {
+						"animation": "\"carabaca2a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca3",
+					"sid": 110011623723208,
+					"parameters": {
+						"animation": "\"carabaca3a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 575663709450648
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 262162929707739,
+					"parameters": {
+						"object": "Bintang_CaraBaca4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca5",
+					"sid": 385757383786957,
+					"parameters": {
+						"animation": "\"carabaca5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca1",
+					"sid": 239340199843721,
+					"parameters": {
+						"animation": "\"carabaca1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca2",
+					"sid": 320637726784624,
+					"parameters": {
+						"animation": "\"carabaca2a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca3",
+					"sid": 863138516603970,
+					"parameters": {
+						"animation": "\"carabaca3a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca4",
+					"sid": 128613964897889,
+					"parameters": {
+						"animation": "\"carabaca4a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 707130966429077
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 656371158296589,
+					"parameters": {
+						"object": "Bintang_CaraBaca5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca1",
+					"sid": 662902783924520,
+					"parameters": {
+						"animation": "\"carabaca1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca2",
+					"sid": 166885066013325,
+					"parameters": {
+						"animation": "\"carabaca2a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca3",
+					"sid": 427127744545895,
+					"parameters": {
+						"animation": "\"carabaca3a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca4",
+					"sid": 989798144918392,
+					"parameters": {
+						"animation": "\"carabaca4a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_CaraBaca5",
+					"sid": 632594675675133,
+					"parameters": {
+						"animation": "\"carabaca5a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 824340263687355
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 151209547412823,
+					"parameters": {
+						"object": "Bintang_PahamMak1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak2",
+					"sid": 514118583317443,
+					"parameters": {
+						"animation": "\"makna2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak3",
+					"sid": 305815796694232,
+					"parameters": {
+						"animation": "\"makna3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak4",
+					"sid": 425189101768675,
+					"parameters": {
+						"animation": "\"makna4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak5",
+					"sid": 856084859998888,
+					"parameters": {
+						"animation": "\"makna5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak1",
+					"sid": 362443297766370,
+					"parameters": {
+						"animation": "\"makna1a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 475777758098434
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 106190019539897,
+					"parameters": {
+						"object": "Bintang_PahamMak2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak3",
+					"sid": 990325683323206,
+					"parameters": {
+						"animation": "\"makna3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak4",
+					"sid": 720197728898713,
+					"parameters": {
+						"animation": "\"makna4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak5",
+					"sid": 397694898555939,
+					"parameters": {
+						"animation": "\"makna5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak1",
+					"sid": 547434990298921,
+					"parameters": {
+						"animation": "\"makna1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak2",
+					"sid": 208201848667475,
+					"parameters": {
+						"animation": "\"makna2a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 911268335752766
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 668150501638390,
+					"parameters": {
+						"object": "Bintang_PahamMak3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak4",
+					"sid": 347791052826078,
+					"parameters": {
+						"animation": "\"makna4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak5",
+					"sid": 178898957323155,
+					"parameters": {
+						"animation": "\"makna5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak1",
+					"sid": 242177133745073,
+					"parameters": {
+						"animation": "\"makna1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak2",
+					"sid": 872389124594800,
+					"parameters": {
+						"animation": "\"makna2a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak3",
+					"sid": 158796552535530,
+					"parameters": {
+						"animation": "\"makna3a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 491685892031441
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 787068876346084,
+					"parameters": {
+						"object": "Bintang_PahamMak4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak5",
+					"sid": 615994676887563,
+					"parameters": {
+						"animation": "\"makna5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak1",
+					"sid": 589858078324343,
+					"parameters": {
+						"animation": "\"makna1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak2",
+					"sid": 292839328154922,
+					"parameters": {
+						"animation": "\"makna2a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak3",
+					"sid": 747161019138569,
+					"parameters": {
+						"animation": "\"makna3a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak4",
+					"sid": 493739677632985,
+					"parameters": {
+						"animation": "\"makna4a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 838524535066657
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 435841984514655,
+					"parameters": {
+						"object": "Bintang_PahamMak5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak1",
+					"sid": 632782130812711,
+					"parameters": {
+						"animation": "\"makna1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak2",
+					"sid": 528276311522900,
+					"parameters": {
+						"animation": "\"makna2a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak3",
+					"sid": 519723196339164,
+					"parameters": {
+						"animation": "\"makna3a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak4",
+					"sid": 870904464384722,
+					"parameters": {
+						"animation": "\"makna4a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMak5",
+					"sid": 538578830410824,
+					"parameters": {
+						"animation": "\"makna5a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 529175124390338
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 592855268930600,
+					"parameters": {
+						"object": "LanjutButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 678374893169322,
+					"parameters": {
+						"layout": "1_Peta_Lvl 6-fa"
+					}
+				}
+			],
+			"sid": 859025115369482
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 720699210659930,
+					"parameters": {
+						"variable": "PMCari_a",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat1",
+					"sid": 123429052313691,
+					"parameters": {
+						"animation": "\"paham1a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 447802176514367
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 554293637552649,
+					"parameters": {
+						"variable": "PMCari_a",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat1",
+					"sid": 841490404838711,
+					"parameters": {
+						"animation": "\"paham1a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 957546536146402
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 566930721065486,
+					"parameters": {
+						"variable": "PMCari_a",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat1",
+					"sid": 532932533878181,
+					"parameters": {
+						"animation": "\"paham1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat2",
+					"sid": 293515134959009,
+					"parameters": {
+						"animation": "\"paham2a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 362199403838029
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 916328872472517,
+					"parameters": {
+						"variable": "PMCari_a",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat1",
+					"sid": 573244756759422,
+					"parameters": {
+						"animation": "\"paham1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat2",
+					"sid": 297860883719138,
+					"parameters": {
+						"animation": "\"paham2a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat3",
+					"sid": 507418737489184,
+					"parameters": {
+						"animation": "\"paham3a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 264680549512676
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 727860377621345,
+					"parameters": {
+						"variable": "PMCari_a",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat1",
+					"sid": 415162793238605,
+					"parameters": {
+						"animation": "\"paham1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat2",
+					"sid": 115648916674169,
+					"parameters": {
+						"animation": "\"paham2a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat3",
+					"sid": 252069663366495,
+					"parameters": {
+						"animation": "\"paham3a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat4",
+					"sid": 745850632190041,
+					"parameters": {
+						"animation": "\"paham4a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 415977827118531
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 291014098873562,
+					"parameters": {
+						"variable": "PMCari_a",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat1",
+					"sid": 175251589371379,
+					"parameters": {
+						"animation": "\"paham1a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat2",
+					"sid": 974559421393475,
+					"parameters": {
+						"animation": "\"paham2a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat3",
+					"sid": 392216655533154,
+					"parameters": {
+						"animation": "\"paham3a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat4",
+					"sid": 544394236633025,
+					"parameters": {
+						"animation": "\"paham4a\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Bintang_PahamMat5",
+					"sid": 226757948000644,
+					"parameters": {
+						"animation": "\"paham5a\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 152556397426224
+		}
+	],
+	"sid": 281416146431096
+}

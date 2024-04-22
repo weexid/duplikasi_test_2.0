@@ -1,0 +1,1587 @@
+{
+	"name": "E Baca Kalimat-da1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "CB_kalimat_da1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 780234139875963
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 433670101802579
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang1_CaraBaca",
+					"sid": 333811189449278,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang2_CaraBaca",
+					"sid": 361678597563431,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang3_CaraBaca",
+					"sid": 184833843179850,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang4_CaraBaca",
+					"sid": 820544642000438,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang5_CaraBaca",
+					"sid": 948465231093123,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Benar_Cek",
+					"sid": 766574061142109,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "klm_nada",
+					"sid": 351492014088245,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "klm_dara",
+					"sid": 517345064791164,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "klm_kanada",
+					"sid": 483560940511372,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FrameCari",
+					"sid": 838072123800652,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_test_da",
+					"sid": 113209257620393,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pointer_a",
+					"sid": 109689593913704,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Maju_1",
+					"sid": 818962339612469,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Maju_2",
+					"sid": 970552624007952,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Maju_3",
+					"sid": 874264870534849,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Maju_4",
+					"sid": 607771892836126,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Maju_5",
+					"sid": 944379440853066,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mundur_1",
+					"sid": 548555241627803,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mundur_2",
+					"sid": 963127226353518,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mundur_3",
+					"sid": 431112974790007,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mundur_4",
+					"sid": 510605085685589,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mundur_5",
+					"sid": 448943812153423,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 410642164442660
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 170530695196191,
+					"parameters": {
+						"object": "Start_test_da"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Start_test_da",
+					"sid": 414315458169727
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Start_test_da",
+					"sid": 485186234609450,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "klm_dara",
+					"sid": 591942468189695,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "klm_kanada",
+					"sid": 957097261771405,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "klm_nada",
+					"sid": 467460918129431,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Maju_1",
+					"sid": 767579544514081,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mundur_1",
+					"sid": 353516183041485,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pointer_a",
+					"sid": 383438386860858,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FrameCari",
+					"sid": 999250412944295,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 933345665000018,
+					"parameters": {
+						"audio-file": "Test baris ke 3",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 890692886711342
+		},
+		{
+			"eventType": "comment",
+			"text": "232=X coordinat",
+			"text-color": [
+				0.9803921568627451,
+				0,
+				0,
+				1
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Baca_a1-351",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 814208865152572,
+							"parameters": {
+								"object": "Maju_1"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Maju_1",
+							"sid": 671883322526080
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Maju_1",
+							"sid": 554478387346914,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Mundur_1",
+							"sid": 457173414252406,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "Pointer_a",
+							"sid": 385922787858029,
+							"parameters": {
+								"x": "885"
+							}
+						},
+						{
+							"type": "comment",
+							"text": "ubah tagging audio, untuk memunculkan button selanjutnya",
+							"text-color": [
+								1,
+								0,
+								0,
+								1
+							]
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 258605069170417,
+							"parameters": {
+								"audio-file": "Correct Sound-a",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"benar a1\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "klm_nada",
+							"sid": 271812460791909,
+							"parameters": {
+								"animation": "\"nada merah\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 788743032777593
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 753991093356704,
+							"parameters": {
+								"tag": "\"benar a1\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Maju_2",
+							"sid": 549544592180287,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Mundur_2",
+							"sid": 342170466131306,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 332950528526425
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 537857543281510,
+							"parameters": {
+								"object": "Mundur_1"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Mundur_1",
+							"sid": 783269583361133
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "Pointer_a",
+							"sid": 892917653807382,
+							"parameters": {
+								"x": "475"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 363695802194367,
+							"parameters": {
+								"audio-file": "Wrong Sound-a",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"salah a1\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "klm_nada",
+							"sid": 700946108053469,
+							"parameters": {
+								"animation": "\"nada\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 861543378695622
+				}
+			],
+			"sid": 883246261322613
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Baca_a2-723",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 451732172672227,
+							"parameters": {
+								"object": "Maju_2"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Maju_2",
+							"sid": 240815013846598
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "klm_dara",
+							"sid": 172089087056130,
+							"parameters": {
+								"animation": "\"dara merah\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Mundur_2",
+							"sid": 611425859524110,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Maju_2",
+							"sid": 171897058842418,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 437183104662508,
+							"parameters": {
+								"audio-file": "Correct Sound-a",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"benar a2\""
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "Pointer_a",
+							"sid": 494299179241093,
+							"parameters": {
+								"x": "1395"
+							}
+						}
+					],
+					"sid": 239351920472527
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 840984280904073,
+							"parameters": {
+								"tag": "\"benar a2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Maju_3",
+							"sid": 409841466939813,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Mundur_3",
+							"sid": 987227263006214,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 400587290136760
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 472637180732251,
+							"parameters": {
+								"object": "Mundur_2"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Mundur_2",
+							"sid": 981990781486186
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "klm_nada",
+							"sid": 991082757411420,
+							"parameters": {
+								"animation": "\"nada\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Maju_2",
+							"sid": 671874498947211,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Mundur_2",
+							"sid": 356306006811835,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "Pointer_a",
+							"sid": 542705402443742,
+							"parameters": {
+								"x": "475"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 233984335413622,
+							"parameters": {
+								"audio-file": "Wrong Sound-a",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"salah a2\""
+							}
+						}
+					],
+					"sid": 420467323204892
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 855512651676337,
+							"parameters": {
+								"tag": "\"salah a2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Maju_1",
+							"sid": 695400418263123,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Mundur_1",
+							"sid": 311130959358106,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 511824141692891
+				}
+			],
+			"sid": 854298723218368
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Baca_a3-1126",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 256141930781660,
+							"parameters": {
+								"object": "Maju_3"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Maju_3",
+							"sid": 214008800039052
+						}
+					],
+					"actions": [
+						{
+							"type": "comment",
+							"text": ""
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "klm_kanada",
+							"sid": 565193519768201,
+							"parameters": {
+								"animation": "\"kanada merah\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Maju_3",
+							"sid": 299175862465467,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Mundur_3",
+							"sid": 799469893469131,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 287803381382252,
+							"parameters": {
+								"audio-file": "Correct Sound-a",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"benar a3\""
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "Pointer_a",
+							"sid": 424343047831530,
+							"parameters": {
+								"x": "1395"
+							}
+						}
+					],
+					"sid": 501558284015154
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 225006800038667,
+							"parameters": {
+								"tag": "\"benar a3\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 351831650858355,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Pointer_a",
+							"sid": 347317022203808,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "Pointer_a",
+							"sid": 294082111338357,
+							"parameters": {
+								"x": "960",
+								"y": "660"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "klm_dara",
+							"sid": 227802877422532,
+							"parameters": {
+								"animation": "\"dara\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "klm_kanada",
+							"sid": 893945948303904,
+							"parameters": {
+								"animation": "\"kanada\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "klm_nada",
+							"sid": 338307666964308,
+							"parameters": {
+								"animation": "\"nada\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 329865777234757,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 417709969673288
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 992858216932461,
+							"parameters": {
+								"object": "Mundur_3"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Mundur_3",
+							"sid": 282891151283676
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "klm_dara",
+							"sid": 734113032023203,
+							"parameters": {
+								"animation": "\"dara\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Maju_3",
+							"sid": 583963656845990,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Mundur_3",
+							"sid": 615533299741731,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "Pointer_a",
+							"sid": 711057186113612,
+							"parameters": {
+								"x": "885"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 958215605514463,
+							"parameters": {
+								"audio-file": "Wrong Sound-a",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"salah a3\""
+							}
+						}
+					],
+					"sid": 319520673945582
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 814284479714814,
+							"parameters": {
+								"tag": "\"salah a3\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Maju_2",
+							"sid": 323231930378296,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Mundur_2",
+							"sid": 236947802856712,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 293354706929350
+				}
+			],
+			"sid": 768678742735216
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Baca_kalimat-1108",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 497145990762335,
+							"parameters": {
+								"object": "Benar_Cek"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 948161556282142
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Pointer_a",
+							"sid": 540838332447198,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 224757636751584,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "klm_dara",
+							"sid": 148545216321072,
+							"parameters": {
+								"animation": "\"dara merah\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "klm_kanada",
+							"sid": 527626631725463,
+							"parameters": {
+								"animation": "\"kanada merah\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "klm_nada",
+							"sid": 503402996872610,
+							"parameters": {
+								"animation": "\"nada merah\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 846843613088622,
+							"parameters": {
+								"audio-file": "Correct Sound-a",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"korek\""
+							}
+						}
+					],
+					"sid": 307315057059867
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 818220844871469,
+							"parameters": {
+								"tag": "\"korek\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 126064752147394,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 417931324921635,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 529614312371581,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 248002275683563,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 774829574751664,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 369076458487175
+				}
+			],
+			"sid": 573630781106300
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Bintang Cara Baca_Kalimat a11",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 842694126102610,
+							"parameters": {
+								"object": "Bintang1_CaraBaca"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 333679073725896
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 636638420954233,
+							"parameters": {
+								"variable": "CB_kalimat_da1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 565355022289919,
+							"parameters": {
+								"variable": "CB_kalimat_da1",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 542935965254809,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Next_test_da",
+							"sid": 773890492568141,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 574427206326255,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 133419622254029,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 180756269863063,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 129661421297191,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 162441469474970
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 481105017685645,
+							"parameters": {
+								"object": "Bintang2_CaraBaca"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 396135020120561
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 861012077152268,
+							"parameters": {
+								"variable": "CB_kalimat_da1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 240330372498848,
+							"parameters": {
+								"variable": "CB_kalimat_da1",
+								"value": "2"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 445830887284361,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 941312913004490,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Next_test_da",
+							"sid": 530484176365694,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 385425516478572,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 943368477635254,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 123029118630947,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 772528582163644
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 415625145664279,
+							"parameters": {
+								"object": "Bintang3_CaraBaca"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 216233543065509
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 903065405691286,
+							"parameters": {
+								"variable": "CB_kalimat_da1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 405780764332639,
+							"parameters": {
+								"variable": "CB_kalimat_da1",
+								"value": "3"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 512816887585883,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 700585105145914,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 213105980205447,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Next_test_da",
+							"sid": 868939811744562,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 769438747849325,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 457242295852169,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 142881393966143
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 203446052064241,
+							"parameters": {
+								"object": "Bintang4_CaraBaca"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 168969416198303
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 101839804647350,
+							"parameters": {
+								"variable": "CB_kalimat_da1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 807268804265044,
+							"parameters": {
+								"variable": "CB_kalimat_da1",
+								"value": "4"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 679194828187215,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 316521463051191,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 270127875941295,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 913718299956863,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Next_test_da",
+							"sid": 539225085820363,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 251690731964240,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 534062645935705
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 936311176825377,
+							"parameters": {
+								"object": "Bintang5_CaraBaca"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 451104651689007
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 770073611541260,
+							"parameters": {
+								"variable": "CB_kalimat_da1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 910346405788569,
+							"parameters": {
+								"variable": "CB_kalimat_da1",
+								"value": "5"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 277024658157022,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 639767714242138,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 192115819153205,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 589462597668852,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 256629329071440,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Next_test_da",
+							"sid": 554862053261801,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 968562746829815
+				}
+			],
+			"sid": 527590188322522
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 659296900607644,
+					"parameters": {
+						"object": "Next_test_da"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_test_da",
+					"sid": 215077297742957
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 782626224829371,
+					"parameters": {
+						"layout": "Baca Kalimat-da2"
+					}
+				}
+			],
+			"sid": 926388822453495
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 965564444257140
+		}
+	],
+	"sid": 615328498874232
+}

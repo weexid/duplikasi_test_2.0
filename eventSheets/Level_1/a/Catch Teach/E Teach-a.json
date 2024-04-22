@@ -1,0 +1,286 @@
+{
+	"name": "E Teach-a",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 361369474516499
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 470159505880779,
+					"parameters": {
+						"audio-file": "1a Teach a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach1\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "a",
+					"sid": 741853500967146,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_a",
+					"sid": 722007060578494,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_a",
+					"sid": 729059990871520,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_pointer_Catcha",
+					"sid": 656295953503300,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 534449680608568
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 688572847800216,
+					"parameters": {
+						"tag": "\"teach1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 981224960019418,
+					"parameters": {
+						"audio-file": "1b Teach a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach2\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_Teach_a",
+					"sid": 155226147589274,
+					"parameters": {
+						"animation": "\"aa\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 706473921254949
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kaka_Teach_a",
+					"sid": 382279392895495,
+					"parameters": {
+						"animation": "\"aa\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_Teach_a",
+					"sid": 140305117016596,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 156123563422325,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 995105441562258,
+					"parameters": {
+						"audio-file": "2 a teach narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach3\""
+					}
+				}
+			],
+			"sid": 453002610320263
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 849441813786539,
+					"parameters": {
+						"tag": "\"teach3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 250786401090650,
+					"parameters": {
+						"audio-file": "3 a teach narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach4\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_pointer_Catcha",
+					"sid": 556186213248943,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "a",
+					"sid": 253982639562950,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_a",
+					"sid": 809312938162668,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 169291443336821
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 509852458951871,
+					"parameters": {
+						"tag": "\"teach4\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 500445054822031,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 670406148864067,
+					"parameters": {
+						"audio-file": "4 a teach narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach5\""
+					}
+				}
+			],
+			"sid": 935462729097559
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 676493378729029,
+					"parameters": {
+						"tag": "\"teach5\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_a",
+					"sid": 422774797618307,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 767968660334680
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 340424578661974,
+					"parameters": {
+						"object": "Next_a"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_a",
+					"sid": 884718406271443
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 892916187505882,
+					"parameters": {
+						"layout": "Catch-ba"
+					}
+				}
+			],
+			"sid": 200317505501962
+		}
+	],
+	"sid": 779686347768272
+}

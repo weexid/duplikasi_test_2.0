@@ -1,0 +1,749 @@
+{
+	"name": "E Catch-a",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 686211509407032
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_a",
+					"sid": 444163622850068,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Button_Start_a",
+					"sid": 717239136628652,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Kaka_walk",
+					"sid": 851291890214580,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"walkcenterrope\"",
+						"property": "position",
+						"end-x": "171",
+						"end-y": "747",
+						"time": "3",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_walk",
+					"sid": 301597244668937,
+					"parameters": {
+						"animation": "\"Kk_walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_tali",
+					"sid": 729356931286157,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_klik_1",
+					"sid": 232154099931443,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_swing1",
+					"sid": 612119806335507,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_pointer_Catcha",
+					"sid": 559903990026952,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_pointer_Catcha2",
+					"sid": 342630329186523,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_klik_1",
+					"sid": 267077177681261,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_klik_2",
+					"sid": 154621814509028,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_klik_3",
+					"sid": 199951831379218,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 750901817154359
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "Kaka_walk",
+					"sid": 328786985264683,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"walkcenterrope\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_walk",
+					"sid": 287465973150508,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_tali",
+					"sid": 320367892544774,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_tali",
+					"sid": 789571553412751,
+					"parameters": {
+						"animation": "\"Kk_idle_rope\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 771477499826414,
+					"parameters": {
+						"audio-file": "1 a catch narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"1 a catch narator\""
+					}
+				}
+			],
+			"sid": 841528503314303
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 289357855623829,
+					"parameters": {
+						"tag": "\"1 a catch narator\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_tali",
+					"sid": 546793945144277,
+					"parameters": {
+						"animation": "\"Kk_jump_rope\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 547099098793479,
+					"parameters": {
+						"audio-file": "2 a catch narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"2 a catch narator\""
+					}
+				}
+			],
+			"sid": 848702388036617
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kaka_tali",
+					"sid": 997805298431262,
+					"parameters": {
+						"animation": "\"Kk_jump_rope\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_tali",
+					"sid": 160420722402372,
+					"parameters": {
+						"animation": "\"Kk_idle_on_rope\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 416164235123768
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 199987360155191,
+					"parameters": {
+						"tag": "\"2 a catch narator\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_pointer_Catcha2",
+					"sid": 705916823202034,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_tali",
+					"sid": 393140739275054,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_klik_1",
+					"sid": 602878560029351,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 846423545279751
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 562604552543907,
+					"parameters": {
+						"object": "Kaka_klik_1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Kaka_klik_1",
+					"sid": 471982386465657
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_pointer_Catcha2",
+					"sid": 644982891775149,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_klik_1",
+					"sid": 306416563496263,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_swing1",
+					"sid": 353399393735232,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_swing1",
+					"sid": 271619368050878,
+					"parameters": {
+						"animation": "\"Kk_swing_aaa\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 682668711818530,
+					"parameters": {
+						"audio-file": "3 a catch kaka",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"aaa1\""
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "BG_Catch_a",
+					"sid": 528197193571952,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"geser\"",
+						"property": "position",
+						"end-x": "3760",
+						"end-y": "540",
+						"time": "4",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 996529672044384
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 953807749643212,
+					"parameters": {
+						"tag": "\"aaa1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_swing1",
+					"sid": 693271254859607,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_klik_2",
+					"sid": 335498067558510,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 439357697632946
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 868152032262749,
+					"parameters": {
+						"object": "Kaka_klik_2"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Kaka_klik_2",
+					"sid": 155760867379699
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_pointer_Catcha2",
+					"sid": 803013014974780,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_klik_2",
+					"sid": 396446758961071,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_swing1",
+					"sid": 875593144989456,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_swing1",
+					"sid": 925410993301311,
+					"parameters": {
+						"animation": "\"Kk_swing_aaa\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 502162844819319,
+					"parameters": {
+						"audio-file": "3 a catch kaka",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"aaa2\""
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "BG_Catch_a",
+					"sid": 923392196729855,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"geser\"",
+						"property": "position",
+						"end-x": "1760",
+						"end-y": "540",
+						"time": "4",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 586533819276862
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 855856281849982,
+					"parameters": {
+						"tag": "\"aaa2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_swing1",
+					"sid": 962930520476015,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_klik_3",
+					"sid": 647506582492804,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 542715021534421
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 885875130732771,
+					"parameters": {
+						"object": "Kaka_klik_3"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Kaka_klik_3",
+					"sid": 601926705377912
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_pointer_Catcha2",
+					"sid": 188942351793260,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_klik_3",
+					"sid": 666864995392689,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_swing1",
+					"sid": 527225128602567,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_swing1",
+					"sid": 732380485314150,
+					"parameters": {
+						"animation": "\"Kk_swing_aaa\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 964677262415454,
+					"parameters": {
+						"audio-file": "3 a catch kaka",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"aaa3\""
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "BG_Catch_a",
+					"sid": 140329768196827,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"geser\"",
+						"property": "position",
+						"end-x": "-300",
+						"end-y": "540",
+						"time": "4",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 892707647200719
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 658283117638133,
+					"parameters": {
+						"tag": "\"aaa3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_swing1",
+					"sid": 466159607121351,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_tali",
+					"sid": 134408505325924,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_tali",
+					"sid": 315708682213960,
+					"parameters": {
+						"animation": "\"Kk_idle_on_rope2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 202493162929108
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kaka_tali",
+					"sid": 737164434632382,
+					"parameters": {
+						"animation": "\"Kk_idle_on_rope2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_tali",
+					"sid": 297634628603387,
+					"parameters": {
+						"animation": "\"Kk turun rope\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 212315425823444
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kaka_tali",
+					"sid": 768166186155359,
+					"parameters": {
+						"animation": "\"Kk turun rope\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_tali",
+					"sid": 253383638469786,
+					"parameters": {
+						"animation": "\"Kk_idle_rope\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 904259813636406,
+					"parameters": {
+						"audio-file": "4 a catch narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"ending\""
+					}
+				}
+			],
+			"sid": 880930105016636
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 144444947909430,
+					"parameters": {
+						"tag": "\"ending\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_a",
+					"sid": 164124030205733,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 417419749011311
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 972988998395820,
+					"parameters": {
+						"object": "Next_a"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 966687351019126,
+					"parameters": {
+						"layout": "Teach-a"
+					}
+				}
+			],
+			"sid": 599250093612335
+		}
+	],
+	"sid": 616987494481158
+}

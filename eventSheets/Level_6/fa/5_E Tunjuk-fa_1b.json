@@ -1,0 +1,424 @@
+{
+	"name": "5_E Tunjuk-fa_1b",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 533895590132804,
+					"parameters": {
+						"object": "ButtonHijau_Home1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 762754331445045,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.UkuranX +30",
+						"end-y": "Self.UkuranY +30",
+						"time": "0.1",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 828127887570515
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 460082185577043
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 569697064287013,
+					"parameters": {
+						"instance-variable": "UkuranX",
+						"value": "Self.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "ButtonHijau_Home1",
+					"sid": 743605645865983,
+					"parameters": {
+						"instance-variable": "UkuranY",
+						"value": "Self.Height"
+					}
+				}
+			],
+			"sid": 836174364977172
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 347804571451461,
+					"parameters": {
+						"object": "Tombol_Salah1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Tombol_Salah1",
+					"sid": 163182943438281
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Tombol_Salah1",
+					"sid": 306295161019234,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "Self.UkuranX +30",
+						"end-y": "Self.UkuranY +30",
+						"time": "0.1",
+						"ease": "easeoutback",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 105423194008289,
+					"parameters": {
+						"audio-file": "negative_beeps-6008",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 373687704013191
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 455413092260992
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Tombol_Salah1",
+					"sid": 230603444588213,
+					"parameters": {
+						"instance-variable": "UkuranX",
+						"value": "Self.Width"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Tombol_Salah1",
+					"sid": 302514555499532,
+					"parameters": {
+						"instance-variable": "UkuranY",
+						"value": "Self.Height"
+					}
+				}
+			],
+			"sid": 934706293016784
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 607668856981707
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "shuffleAbu_pa",
+					"sid": 860787782146250,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "shuffleAbu_pa",
+					"sid": 168563025446224,
+					"parameters": {
+						"animation": "\"pa\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "shuffleAbu_fa",
+					"sid": 828455635568305,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "shuffleAbu_fa",
+					"sid": 679737820308398,
+					"parameters": {
+						"animation": "\"fa\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Star_spriteKanan",
+					"sid": 161929857071611,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Star_spriteKiri",
+					"sid": 803376022327466,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Tombol_Benar1",
+					"sid": 834557215724695,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Tombol_Salah1",
+					"sid": 346050475336743,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 613879369062355
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "shuffleAbu_pa",
+					"sid": 937794524978266,
+					"parameters": {
+						"animation": "\"pa\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 547377391620168,
+					"parameters": {
+						"audio-file": "pa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 761469195609348
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 670458811265997,
+					"parameters": {
+						"object": "shuffleAbu_pa"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "shuffleAbu_pa",
+					"sid": 611096959954011
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 929933818118403,
+					"parameters": {
+						"audio-file": "Correct Sound",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "shuffleAbu_pa",
+					"sid": 900052109203974,
+					"parameters": {
+						"animation": "\"pa benar\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Star_spriteKiri",
+					"sid": 270792380706048,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "Star_spriteKiri",
+					"sid": 575820173767295,
+					"parameters": {
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Tombol_Benar1",
+					"sid": 711775117216857,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Tombol_Salah1",
+					"sid": 285823836221363,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 733895321617626
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 366635376228787,
+					"parameters": {
+						"object": "shuffleAbu_fa"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "shuffleAbu_fa",
+					"sid": 260422308852284
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 596408565235750,
+					"parameters": {
+						"audio-file": "negative_beeps-6008",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Tombol_Salah1",
+					"sid": 222424866843505,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Tombol_Benar1",
+					"sid": 392623857341715,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 574789666762060
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 867294251065238,
+					"parameters": {
+						"object": "Tombol_Benar1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Tombol_Benar1",
+					"sid": 670227614732992
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 842165212775372,
+					"parameters": {
+						"audio-file": "mixkit-melodic-gold-price-2000",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 184180483545818,
+					"parameters": {
+						"layout": "5_Tunjuk_fa_1c"
+					}
+				}
+			],
+			"sid": 832629113319535
+		}
+	],
+	"sid": 282696210916904
+}

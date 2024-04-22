@@ -1,0 +1,1003 @@
+{
+	"name": "E Cari Sukat-da2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Total_Soal_da2",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 562961538292728
+		},
+		{
+			"eventType": "variable",
+			"name": "Salah_da2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 237581217758040
+		},
+		{
+			"eventType": "variable",
+			"name": "PMCari_da2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 331921000728297
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 450198767191368
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_1",
+					"sid": 662097889862630,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_2",
+					"sid": 981845674492249,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_3",
+					"sid": 865921951920817,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_4",
+					"sid": 484110719336259,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_5",
+					"sid": 657105047527561,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_6",
+					"sid": 882231996642152,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_7",
+					"sid": 956304811141357,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_8",
+					"sid": 477653925945390,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_9",
+					"sid": 925938664799138,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_10",
+					"sid": 272441162738550,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FrameCari",
+					"sid": 237903142752260,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_test_da",
+					"sid": 926028901404953,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 963332366990860
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 935818380646260,
+					"parameters": {
+						"object": "Start_test_da"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Start_test_da",
+					"sid": 483666347571522
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Start_test_da",
+					"sid": 899388273126042,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_1",
+					"sid": 162059735381082,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_2",
+					"sid": 757338381680001,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_3",
+					"sid": 925856901992179,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_4",
+					"sid": 476503382701507,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_5",
+					"sid": 974792964414785,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_6",
+					"sid": 220980657015095,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_7",
+					"sid": 487241395681494,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_8",
+					"sid": 620853858594792,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_9",
+					"sid": 199200212551612,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Cari_10",
+					"sid": 825931836779187,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FrameCari",
+					"sid": 372988377208731,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 170987465292604,
+					"parameters": {
+						"audio-file": "Test cari da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 870821365699557
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 541052184844685,
+					"parameters": {
+						"object": "Cari_1"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari_1",
+					"sid": 940218690352533,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari_1",
+					"sid": 256913718515947
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_test_da",
+					"sid": 753579732279881,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Cari_1",
+					"sid": 878456185856040,
+					"parameters": {
+						"animation": "\"da benar\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 672103282617839,
+					"parameters": {
+						"audio-file": "Correct Sound-a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari_1",
+					"sid": 929199503619240,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 986201393867747
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 843803956115863,
+					"parameters": {
+						"object": "Cari_2"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari_2",
+					"sid": 594697268057388,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari_2",
+					"sid": 792886618365391
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 809682952499998,
+					"parameters": {
+						"variable": "Salah_da2",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari_2",
+					"sid": 771105579910563,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 949969500299504,
+					"parameters": {
+						"audio-file": "Wrong Sound-a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 242548683521719
+		},
+		{
+			"eventType": "comment",
+			"text": "Jawaban Salah"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 452950806194050,
+					"parameters": {
+						"object": "Cari_3"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari_3",
+					"sid": 267862410034768,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari_3",
+					"sid": 634967587973957
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_test_da",
+					"sid": 425836767896026,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Cari_3",
+					"sid": 651897948903693,
+					"parameters": {
+						"animation": "\"da benar\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari_3",
+					"sid": 199598730892399,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 813817545704142,
+					"parameters": {
+						"audio-file": "Correct Sound-a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 323775918911733
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 972577023751825,
+					"parameters": {
+						"object": "Cari_4"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari_4",
+					"sid": 736375531562422,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari_4",
+					"sid": 742854036095360
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 876561641648261,
+					"parameters": {
+						"variable": "Salah_da2",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari_4",
+					"sid": 451910787540805,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 760832428776125,
+					"parameters": {
+						"audio-file": "Wrong Sound-a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 786217540029618
+		},
+		{
+			"eventType": "comment",
+			"text": "Jawaban Salah"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 148999532731039,
+					"parameters": {
+						"object": "Cari_5"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari_5",
+					"sid": 663261013269818,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari_5",
+					"sid": 143145692687077
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 863389007536522,
+					"parameters": {
+						"variable": "Salah_da2",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari_5",
+					"sid": 885754840447244,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 687501303054614,
+					"parameters": {
+						"audio-file": "Wrong Sound-a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 455168228283583
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 215561454106262,
+					"parameters": {
+						"object": "Cari_6"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari_6",
+					"sid": 975377264887858,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari_6",
+					"sid": 168901050931437
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_test_da",
+					"sid": 932141947456692,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Cari_6",
+					"sid": 906250326724234,
+					"parameters": {
+						"animation": "\"da benar\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari_6",
+					"sid": 131614092855059,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 724590114014956,
+					"parameters": {
+						"audio-file": "Correct Sound-a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 265716284726014
+		},
+		{
+			"eventType": "comment",
+			"text": "Jawaban Salah"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 717841823635728,
+					"parameters": {
+						"object": "Cari_7"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari_7",
+					"sid": 934249024130758,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari_7",
+					"sid": 134334563914409
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 859697533206555,
+					"parameters": {
+						"variable": "Salah_da2",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari_7",
+					"sid": 148912504051977,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 139689891171897,
+					"parameters": {
+						"audio-file": "Wrong Sound-a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 369220888263024
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 114295299910700,
+					"parameters": {
+						"object": "Cari_8"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari_8",
+					"sid": 880726638348614,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari_8",
+					"sid": 698704510976027
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_test_da",
+					"sid": 620719510815824,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Cari_8",
+					"sid": 822367916571063,
+					"parameters": {
+						"animation": "\"da benar\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari_8",
+					"sid": 471114026205881,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 232206750807247,
+					"parameters": {
+						"audio-file": "Correct Sound-a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 616388737580065
+		},
+		{
+			"eventType": "comment",
+			"text": "Jawaban Salah"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 524059727970461,
+					"parameters": {
+						"object": "Cari_9"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari_9",
+					"sid": 168981542914658,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari_9",
+					"sid": 321701245541914
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_test_da",
+					"sid": 434466780288131,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Cari_9",
+					"sid": 624554065223908,
+					"parameters": {
+						"animation": "\"da benar\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari_9",
+					"sid": 828481853581333,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 220603653656934,
+					"parameters": {
+						"audio-file": "Correct Sound-a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 114174199262677
+		},
+		{
+			"eventType": "comment",
+			"text": "Jawaban Salah"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 184470101454873,
+					"parameters": {
+						"object": "Cari_10"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Cari_10",
+					"sid": 959420579239919,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Cari_10",
+					"sid": 790375036390834
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 877425554635299,
+					"parameters": {
+						"variable": "Salah_da2",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Cari_10",
+					"sid": 902514389145367,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 923777847180851,
+					"parameters": {
+						"audio-file": "Wrong Sound-a",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 718491181816269
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Home_test_da",
+					"sid": 467708867875889,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 299996941387114,
+					"parameters": {
+						"variable": "PMCari_da2",
+						"value": "5*(1-(Salah_da2/Total_Soal_da2))"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_test_da",
+					"sid": 606672399980465,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 836804486024371
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 526828544427629,
+					"parameters": {
+						"object": "Next_test_da"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_test_da",
+					"sid": 278650341152314
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 131148170219584,
+					"parameters": {
+						"layout": "Baca Sukat-da2"
+					}
+				}
+			],
+			"sid": 930005660996491
+		}
+	],
+	"sid": 420012573072037
+}

@@ -1,0 +1,1273 @@
+{
+	"name": "E Penilaian_wa",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "RataPM_Cari_wa",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 734223115251693
+		},
+		{
+			"eventType": "variable",
+			"name": "RataPM_Baca_wa",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 839563362352961
+		},
+		{
+			"eventType": "variable",
+			"name": "RataCB_Kalimat_wa",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 822075813050601
+		},
+		{
+			"eventType": "variable",
+			"name": "RataCB_Kata_wa",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 177551167377249
+		},
+		{
+			"eventType": "variable",
+			"name": "RataPM_All_wa",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 572210400513124
+		},
+		{
+			"eventType": "variable",
+			"name": "RataCB_All_wa",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 845953471586644
+		},
+		{
+			"eventType": "variable",
+			"name": "RataPMak_All_wa",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 334156355860040
+		},
+		{
+			"eventType": "variable",
+			"name": "RataALL_wa",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 321303995274862
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 994911504376876
+				}
+			],
+			"actions": [
+				{
+					"id": "set-css-style",
+					"objectClass": "Komentar_aba",
+					"sid": 271904252157360,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"30px\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang_Ratarata1",
+					"sid": 105510383120890,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang_Ratarata2",
+					"sid": 979179639811340,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang_Ratarata3",
+					"sid": 220171746903826,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang_Ratarata4",
+					"sid": 541011052796877,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang_Ratarata5",
+					"sid": 614435786913119,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ButtonHijau_Next",
+					"sid": 713019590184881,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 547571671775807,
+					"parameters": {
+						"variable": "RataPM_Cari_wa",
+						"value": "((PMCari_wa1+PMCari_wa2)/2)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 892161765989276,
+					"parameters": {
+						"variable": "RataPM_Baca_wa",
+						"value": "((PMBaca_sukat_wa1+PMBaca_sukat_wa2+PMBaca_sukat_wa3)/3)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 869256771552703,
+					"parameters": {
+						"variable": "RataPM_All_wa",
+						"value": "((RataPM_Cari_wa+RataPM_Baca_wa)/2)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 765102138460333,
+					"parameters": {
+						"variable": "RataCB_Kalimat_wa",
+						"value": "((CB_kalimat_wa1+CB_kalimat_wa2)/2)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 300683194469490,
+					"parameters": {
+						"variable": "RataCB_Kata_wa",
+						"value": "((CB_wa1+CB_wa2+CB_wa3)/3)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 183870998722582,
+					"parameters": {
+						"variable": "RataCB_All_wa",
+						"value": "int((RataCB_Kalimat_wa+RataCB_Kata_wa)/2)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 149211884165587,
+					"parameters": {
+						"variable": "RataPMak_All_wa",
+						"value": "int((PMak_wa1+PMak_wa2+PMak_wa3)/3)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 528158925305777,
+					"parameters": {
+						"variable": "RataALL_wa",
+						"value": "int((RataPM_All_wa+RataCB_All_wa+RataPMak_All_wa)/3)"
+					}
+				}
+			],
+			"sid": 679134862692965
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "PM_aba3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 613676916837071,
+							"parameters": {
+								"variable": "RataPM_All_wa",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat1",
+							"sid": 510745413465355,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 493320626590177
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 927242553337793,
+							"parameters": {
+								"variable": "RataPM_All_wa",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat1",
+							"sid": 802082288438818,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 472378382311825
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 766596974343349,
+							"parameters": {
+								"variable": "RataPM_All_wa",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat1",
+							"sid": 200002787300774,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat2",
+							"sid": 682683934493483,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 769336518180990
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 434505853319977,
+							"parameters": {
+								"variable": "RataPM_All_wa",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat1",
+							"sid": 420165740280646,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat2",
+							"sid": 907237554292706,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat3",
+							"sid": 897149574064812,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 774312438860155
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 783793792863159,
+							"parameters": {
+								"variable": "RataPM_All_wa",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat1",
+							"sid": 670328188472118,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat2",
+							"sid": 813046490941060,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat3",
+							"sid": 169925163212666,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat4",
+							"sid": 374833724654252,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 276341739204813
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 126089281379786,
+							"parameters": {
+								"variable": "RataPM_All_wa",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat1",
+							"sid": 157759740118220,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat2",
+							"sid": 415097127942116,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat3",
+							"sid": 659727145657761,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat4",
+							"sid": 929540031065750,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMat5",
+							"sid": 873091934853275,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 220455282797326
+				}
+			],
+			"sid": 925323058748850
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "CB_aba3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 920427846899905,
+							"parameters": {
+								"variable": "RataCB_All_wa",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca1",
+							"sid": 367734220465323,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 660297432187727
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 611428621805189,
+							"parameters": {
+								"variable": "RataCB_All_wa",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca1",
+							"sid": 509631832825572,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 143512085022300
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 933472235638077,
+							"parameters": {
+								"variable": "RataCB_All_wa",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca1",
+							"sid": 208920170801821,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca2",
+							"sid": 561566360001850,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 175831312439995
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 233253784966723,
+							"parameters": {
+								"variable": "RataCB_All_wa",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca1",
+							"sid": 953772920375814,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca2",
+							"sid": 311074058400356,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca3",
+							"sid": 620652624429427,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 367964354843059
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 838819952270705,
+							"parameters": {
+								"variable": "RataCB_All_wa",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca1",
+							"sid": 964164466348011,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca2",
+							"sid": 159640415856595,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca3",
+							"sid": 221175293252647,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca4",
+							"sid": 371812752222762,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 856908839784998
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 178914180222041,
+							"parameters": {
+								"variable": "RataCB_All_wa",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca1",
+							"sid": 902315576755415,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca2",
+							"sid": 463887113799236,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca3",
+							"sid": 977776981867219,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca4",
+							"sid": 279117998240498,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_CaraBaca5",
+							"sid": 565719397683521,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 861487998399222
+				}
+			],
+			"sid": 538336351500324
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "PMak_aba3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 350279080595823,
+							"parameters": {
+								"variable": "RataPMak_All_wa",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak1",
+							"sid": 170754857030560,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 442437756587110
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 412697375285356,
+							"parameters": {
+								"variable": "RataPMak_All_wa",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak1",
+							"sid": 721913107668054,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 463130351658850
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 636743109914518,
+							"parameters": {
+								"variable": "RataPMak_All_wa",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak1",
+							"sid": 591670457400209,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak2",
+							"sid": 334070621974286,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 881269572259066
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 938161556554446,
+							"parameters": {
+								"variable": "RataPMak_All_wa",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak1",
+							"sid": 495491237489473,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak2",
+							"sid": 659994913397175,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak3",
+							"sid": 490815180366032,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 377316756170454
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 317549061230505,
+							"parameters": {
+								"variable": "RataPMak_All_wa",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak1",
+							"sid": 654275267485182,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak2",
+							"sid": 172944564621586,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak3",
+							"sid": 383901438423063,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak4",
+							"sid": 481241569476919,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 231780654392337
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 668717545734704,
+							"parameters": {
+								"variable": "RataPMak_All_wa",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak1",
+							"sid": 930209418326153,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak2",
+							"sid": 362939918519857,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak3",
+							"sid": 233008288663751,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak4",
+							"sid": 592937547001743,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_PahamMak5",
+							"sid": 518335506615828,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 624635930225727
+				}
+			],
+			"sid": 929222047125471
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "RataALL_aba3",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 379662155432879,
+							"parameters": {
+								"variable": "RataALL_wa",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata1",
+							"sid": 631136686814858,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 711071338815107
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 381876090736958,
+							"parameters": {
+								"variable": "RataALL_wa",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata1",
+							"sid": 951367491207143,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata2",
+							"sid": 795526189515137,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 703848604712278
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 102065350842711,
+							"parameters": {
+								"variable": "RataALL_wa",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata1",
+							"sid": 377824924149696,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata2",
+							"sid": 968558513443827,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata3",
+							"sid": 584546966611432,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 765060203663882
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 567139588680032,
+							"parameters": {
+								"variable": "RataALL_wa",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata1",
+							"sid": 764561861223925,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata2",
+							"sid": 299032155160479,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata3",
+							"sid": 502519305979121,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata4",
+							"sid": 368204812895389,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 665462762703026
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 550812449768377,
+							"parameters": {
+								"variable": "RataALL_wa",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata1",
+							"sid": 219796339266755,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata2",
+							"sid": 652283987858513,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata3",
+							"sid": 187714649084970,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata4",
+							"sid": 916128869006903,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang_Ratarata5",
+							"sid": 414539721417249,
+							"parameters": {
+								"animation": "\"kuning\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 519078200807101
+				}
+			],
+			"sid": 778096047284840
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 652988507445847,
+					"parameters": {
+						"object": "LanjutButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 532087835935044,
+					"parameters": {
+						"layout": "Catch-ca"
+					}
+				}
+			],
+			"sid": 258543407560844
+		}
+	],
+	"sid": 732077863771283
+}

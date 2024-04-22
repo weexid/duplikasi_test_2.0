@@ -1,0 +1,872 @@
+{
+	"name": "E Catch-na",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 341118279411816
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas1Hide",
+					"sid": 345381841293399,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas2Hide",
+					"sid": 769198333985989,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas3Hide",
+					"sid": 881217757828471,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas4Hide",
+					"sid": 720297871887592,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas5Hide",
+					"sid": 364843195093693,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas6Hide",
+					"sid": 335604167701865,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 852260780534828,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ai_dadah_na",
+					"sid": 567660798647792,
+					"parameters": {
+						"animation": "\"dadah front\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_dadah_na",
+					"sid": 837156312058703,
+					"parameters": {
+						"animation": "\"dadah front\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 127166892929886,
+					"parameters": {
+						"audio-file": "1 catch na",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 1\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_na",
+					"sid": 460625121986871,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 512409823617493
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Ai_dadah_na",
+					"sid": 307206760013592,
+					"parameters": {
+						"animation": "\"dadah front\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Ai_dadah_na",
+					"sid": 285876231050897,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 534698987521840
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kaka_dadah_na",
+					"sid": 170287069415381,
+					"parameters": {
+						"animation": "\"dadah front\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_dadah_na",
+					"sid": 133668759970218,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 272070676776488
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 861098982450665,
+					"parameters": {
+						"tag": "\"catch 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 160496858489666,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 353348412738650,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 634516668768298,
+					"parameters": {
+						"audio-file": "2 catch na",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 2\""
+					}
+				}
+			],
+			"sid": 428071687936023
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 261406276020562,
+					"parameters": {
+						"tag": "\"catch 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 985021356186535,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 362132152034276,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas1Hide",
+					"sid": 974021044698039,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 351056099675688,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas2Hide",
+					"sid": 857762713522791,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 393304773811273,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas3Hide",
+					"sid": 195638217308152,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 550052650263719,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas4Hide",
+					"sid": 170686211317189,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 961351795698879,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas5Hide",
+					"sid": 158099410268996,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 951410874329993,
+					"parameters": {
+						"seconds": "0.3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas6Hide",
+					"sid": 157051146267752,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 618658556870691
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 788083036526396,
+					"parameters": {
+						"object": "Nanas1Hide"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Nanas1Hide",
+					"sid": 123088734667767
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_na",
+					"sid": 193805348584648,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 462124737751461,
+					"parameters": {
+						"audio-file": "Correct Sound_na",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas1Hide",
+					"sid": 488476470803917,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 352130658492391,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 109956081400541,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 505554287145455,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 540363064287535
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 932161799840107,
+					"parameters": {
+						"object": "Nanas2Hide"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Nanas2Hide",
+					"sid": 170778289720925
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_na",
+					"sid": 923420890204235,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 496413260781968,
+					"parameters": {
+						"audio-file": "Correct Sound_na",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas2Hide",
+					"sid": 137430979883028,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 645628890470086,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 726946394054064,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 570309164375899,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 203484609330499
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 583741744334842,
+					"parameters": {
+						"object": "Nanas3Hide"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Nanas3Hide",
+					"sid": 437728694575077
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_na",
+					"sid": 712798128563486,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 486903606751419,
+					"parameters": {
+						"audio-file": "Correct Sound_na",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas3Hide",
+					"sid": 222481368826994,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 260150308679038,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 124843760485899,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 256573222122140,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 873325722119682
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 478783691080594,
+					"parameters": {
+						"object": "Nanas4Hide"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Nanas4Hide",
+					"sid": 403685694268784
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_na",
+					"sid": 768393109757452,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 760050136817788,
+					"parameters": {
+						"audio-file": "Correct Sound_na",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas4Hide",
+					"sid": 426175359471690,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 132128749604017,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 913531369181219,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 848056232237602,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 368863365925239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 184247746437050,
+					"parameters": {
+						"object": "Nanas5Hide"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Nanas5Hide",
+					"sid": 775330418321707
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_na",
+					"sid": 721543225959347,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 352790739120701,
+					"parameters": {
+						"audio-file": "Correct Sound_na",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas5Hide",
+					"sid": 376016058601173,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 573311591619359,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 966351339201816,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 661283959207251,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 593812391480123
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 329069304071341,
+					"parameters": {
+						"object": "Nanas6Hide"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Nanas6Hide",
+					"sid": 488754216422992
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_na",
+					"sid": 647814657648418,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 999763788614158,
+					"parameters": {
+						"audio-file": "Correct Sound_na",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas6Hide",
+					"sid": 686075871521974,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 970142495008678,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 130852891233947,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Nanas_depan",
+					"sid": 514964190065121,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 170269735807916
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Home_na",
+					"sid": 922189398284657,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"comparison": 0,
+						"value": "6"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Home_na",
+					"sid": 857047322450735,
+					"parameters": {
+						"instance-variable": "Play_narator"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Home_na",
+					"sid": 620230067283674,
+					"parameters": {
+						"instance-variable": "Play_narator",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 415874816943974,
+					"parameters": {
+						"audio-file": "3 catch na",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 3\""
+					}
+				}
+			],
+			"sid": 964004332875911
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 290322249951489,
+					"parameters": {
+						"tag": "\"catch 3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_na",
+					"sid": 544023652835928,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 575364630710044
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 323211261875480,
+					"parameters": {
+						"object": "Next_na"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_na",
+					"sid": 206089071466441
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 198652796142920,
+					"parameters": {
+						"layout": "Teach-na"
+					}
+				}
+			],
+			"sid": 786112005248745
+		}
+	],
+	"sid": 242288950233230
+}

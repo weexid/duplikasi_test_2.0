@@ -1,0 +1,755 @@
+{
+	"name": "E Catch-da_2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 386723333189343
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_BA4",
+					"sid": 345271240330601,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_BA5",
+					"sid": 118572444457767,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_BA6",
+					"sid": 420296238157997,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_da",
+					"sid": 971898782841051,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 922293775563007
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 104180454463858,
+					"parameters": {
+						"object": "Klik_DA"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Klik_DA",
+					"sid": 836940084324290,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 793388991618579,
+					"parameters": {
+						"audio-file": "Correct Sound_da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_da",
+					"sid": 572217810879613,
+					"parameters": {
+						"instance-variable": "Komplet_Da",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Klik_DA",
+					"sid": 126625165206620,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Klik_DA",
+					"sid": 305650924551010,
+					"parameters": {
+						"animation": "\"dadah\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 191161887063866,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_DA",
+					"sid": 442000472498214,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 747547323377926
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 948579845172067,
+					"parameters": {
+						"object": "Klik_DA2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 384382298794791,
+					"parameters": {
+						"audio-file": "Correct Sound_da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_da",
+					"sid": 600859449530273,
+					"parameters": {
+						"instance-variable": "Komplet_Da",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Klik_DA2",
+					"sid": 982984517558032,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Klik_DA2",
+					"sid": 221957851697848,
+					"parameters": {
+						"animation": "\"dadah\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 698709738831788,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_DA2",
+					"sid": 271801156984858,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 371625687903226
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 454593791843033,
+					"parameters": {
+						"object": "Klik_DA3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 975097633426308,
+					"parameters": {
+						"audio-file": "Correct Sound_da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_da",
+					"sid": 157966790800260,
+					"parameters": {
+						"instance-variable": "Komplet_Da",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Klik_DA3",
+					"sid": 174089947129141,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Klik_DA3",
+					"sid": 576780948172729,
+					"parameters": {
+						"animation": "\"dadah\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 130373124418542,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_DA3",
+					"sid": 644127469253720,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 721919164733617
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 664115122511191,
+					"parameters": {
+						"object": "Klik_BA"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 883778937389725,
+					"parameters": {
+						"audio-file": "Salah_da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 903616326808025
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 812938652345531,
+					"parameters": {
+						"object": "Klik_BA2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 121972269725114,
+					"parameters": {
+						"audio-file": "Salah_da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 502050960081605
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 348416261841780,
+					"parameters": {
+						"object": "Klik_BA3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 359988481143902,
+					"parameters": {
+						"audio-file": "Salah_da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 489219549701034
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Home_da",
+					"sid": 373080570357796,
+					"parameters": {
+						"instance-variable": "Komplet_Da",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Home_da",
+					"sid": 744975179469520,
+					"parameters": {
+						"instance-variable": "Play_narator_Da"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Home_da",
+					"sid": 528709764341343,
+					"parameters": {
+						"instance-variable": "Play_narator_Da",
+						"value": "true"
+					}
+				},
+				{
+					"id": "remove-layer",
+					"objectClass": "System",
+					"sid": 756922691483344,
+					"parameters": {
+						"layer": "\"NoKlik Ba\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_BA4",
+					"sid": 609626238495846,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_BA5",
+					"sid": 680945558193799,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_BA6",
+					"sid": 234306497360788,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 484245062058714,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 198804255420535,
+					"parameters": {
+						"audio-file": "7 catch da narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 5\""
+					}
+				}
+			],
+			"sid": 636014213103244
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 604236406531415,
+					"parameters": {
+						"object": "Klik_BA4"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Klik_BA4",
+					"sid": 558805793447868
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_da",
+					"sid": 120538275928122,
+					"parameters": {
+						"instance-variable": "Komplet_Ba",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 397263689962795,
+					"parameters": {
+						"audio-file": "Correct Sound_da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Klik_BA4",
+					"sid": 169000260885651,
+					"parameters": {
+						"animation": "\"baa\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 880931276780748,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_BA4",
+					"sid": 792534023915782,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 496909987159588
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 464946392801845,
+					"parameters": {
+						"object": "Klik_BA5"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Klik_BA5",
+					"sid": 238225861847013
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_da",
+					"sid": 439894837592978,
+					"parameters": {
+						"instance-variable": "Komplet_Ba",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 908352882263535,
+					"parameters": {
+						"audio-file": "Correct Sound_da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Klik_BA5",
+					"sid": 565342608331805,
+					"parameters": {
+						"animation": "\"baa\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 963756094604707,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_BA5",
+					"sid": 411066649663829,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 877908686566129
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 149622412981758,
+					"parameters": {
+						"object": "Klik_BA6"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Klik_BA6",
+					"sid": 268066356150561
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_da",
+					"sid": 346668545702071,
+					"parameters": {
+						"instance-variable": "Komplet_Ba",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 276297099171567,
+					"parameters": {
+						"audio-file": "Correct Sound_da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Klik_BA6",
+					"sid": 529348906754382,
+					"parameters": {
+						"animation": "\"baa\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 721045766134357,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_BA6",
+					"sid": 552196382437612,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 518508853524587
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Home_da",
+					"sid": 301005526028251,
+					"parameters": {
+						"instance-variable": "Komplet_Ba",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Home_da",
+					"sid": 761038337014821,
+					"parameters": {
+						"instance-variable": "Play_narator_Ba"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Home_da",
+					"sid": 117267924554900,
+					"parameters": {
+						"instance-variable": "Play_narator_Ba",
+						"value": "true"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 978848762893591,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 553076396900377,
+					"parameters": {
+						"audio-file": "8 catch da narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 6\""
+					}
+				}
+			],
+			"sid": 956001663140629
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 903634311547008,
+					"parameters": {
+						"tag": "\"catch 6\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_da",
+					"sid": 792218993538698,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 481598104315842
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 255553627005482,
+					"parameters": {
+						"object": "Next_da"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_da",
+					"sid": 382784397290749
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 289450133302912,
+					"parameters": {
+						"layout": "Teach-da"
+					}
+				}
+			],
+			"sid": 245456242958953
+		}
+	],
+	"sid": 816558825740131
+}

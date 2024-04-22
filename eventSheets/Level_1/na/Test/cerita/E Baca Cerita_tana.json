@@ -1,0 +1,4121 @@
+{
+	"name": "E Baca Cerita_tana",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "CB_cerita_tana",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 980220257060202
+		},
+		{
+			"eventType": "variable",
+			"name": "TotalCB_Cerita_tana",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 157465515036161
+		},
+		{
+			"eventType": "variable",
+			"name": "JumlahSoal_Cerita_tana",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 255824453857126
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 674735542065971
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Start_test_na",
+					"sid": 438606804181440,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FrameBacaCerita",
+					"sid": 346228637719054,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Benar_Cek",
+					"sid": 145359277661158,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Benar_Cek2",
+					"sid": 300453255900031,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Benar_Cek3",
+					"sid": 424642656371400,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Benar_Cek4",
+					"sid": 592696471048246,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Benar_Cek5",
+					"sid": 832427758468316,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Benar_Cek6",
+					"sid": 804270770726574,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang1_CaraBaca",
+					"sid": 455567306967495,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang2_CaraBaca",
+					"sid": 408529500548855,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang3_CaraBaca",
+					"sid": 991701411104514,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang4_CaraBaca",
+					"sid": 732511408563470,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Bintang5_CaraBaca",
+					"sid": 196253386062604,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_test_na",
+					"sid": 861330961886772,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "img_kacamata",
+					"sid": 814307393952821,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cerita1_tana",
+					"sid": 449053145657485,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cerita2_tana",
+					"sid": 584438234575161,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cerita3_tana",
+					"sid": 860160861777658,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cerita4_tana",
+					"sid": 809624890757531,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cerita5_tana",
+					"sid": 951532683594462,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 483760228717330
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Cerita abaca_Baris ke-12",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Cerita baris ke-1"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 204186942913654,
+							"parameters": {
+								"object": "Start_test_na"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Start_test_na",
+							"sid": 720542652076354
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Start_test_na",
+							"sid": 568800433397828,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "cerita1_tana",
+							"sid": 493963231075645,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "FrameBacaCerita",
+							"sid": 650955304988105,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 139724110277663,
+							"parameters": {
+								"audio-file": "5 test baca cerita",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"baca cerita\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 258281165583727,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "img_kacamata",
+							"sid": 804056385636271,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 990765661041973
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 632676839845624,
+							"parameters": {
+								"object": "Benar_Cek"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Home_test_na",
+							"sid": 839514708808158,
+							"parameters": {
+								"instance-variable": "Baris",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 919572783628390
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 238375814877138,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "cerita1_tana",
+							"sid": 439937101869158,
+							"parameters": {
+								"animation": "\"benar\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 189855994665015,
+							"parameters": {
+								"audio-file": "Correct Sound",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"korek\""
+							}
+						}
+					],
+					"sid": 654784979723621
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 476211344530588,
+							"parameters": {
+								"tag": "\"korek\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 122247649338388,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 772150052320295,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 330554295826061,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 406021917397215,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 179962728051796,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 159263933365929,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 945829628307217,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 362059096335697,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 311381573953995,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 323554970540643,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 147695895069109
+				},
+				{
+					"eventType": "comment",
+					"text": "Penilaian ke-1_Bintang Cara Baca"
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Penilaian abaca_Bintang Cara Baca12",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 127976205788951,
+									"parameters": {
+										"object": "Bintang1_CaraBaca"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 702447477688884
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 209658160941991,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 641627640665531,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 326694323040806,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 368546652925862,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 189201793046338,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 579254615143260,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 683976537606869,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 117797118790436,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 583559807188956
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 432186225809292,
+									"parameters": {
+										"object": "Bintang2_CaraBaca"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 549342298846457
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 158753660774685,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 583731721165110,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 554392642006661,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 966517528663223,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 324557330670508,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 321391168539010,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 461774153330698,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 977688966846577,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 124828660923649
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 978805219474078,
+									"parameters": {
+										"object": "Bintang3_CaraBaca"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 288449178434767
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 341614261184898,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 691642065314037,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "3"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 135762073199658,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 568589188355956,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 426333553385200,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 227540435509516,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 734179578264292,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 950272631816872,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 372455970093169
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 870687430741330,
+									"parameters": {
+										"object": "Bintang4_CaraBaca"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 844137085875648
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 438651348551839,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 706672178253875,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "4"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 279746896636134,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 556521961250056,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 834063477741401,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 613583277347380,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 685532220567341,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 872116964735694,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 847010047948688
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 994437289245646,
+									"parameters": {
+										"object": "Bintang5_CaraBaca"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 347784643200851
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 218361710950721,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 598440007907999,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "5"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 636483866982519,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 488793019542019,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 943993257750949,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 763125292342912,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 884916212174014,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 427554403275402,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 140038728191972
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 736912511551602,
+									"parameters": {
+										"object": "Next_test_na"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 322298865945210,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Next_test_na",
+									"sid": 227861781172070
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 394727770298465,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cerita2_tana",
+									"sid": 574448228457949,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Benar_Cek",
+									"sid": 130516333548260,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 741771034682355,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 252268300992135,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 486858370145383,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 945413906371005,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 558333091005806,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "add-to-instvar",
+									"objectClass": "Home_test_na",
+									"sid": 709413968435343,
+									"parameters": {
+										"instance-variable": "Baris",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 378617449385454,
+									"parameters": {
+										"variable": "TotalCB_Cerita_tana",
+										"value": "Home_test_na.Bintang_Sementara"
+									}
+								}
+							],
+							"sid": 646332808045175
+						}
+					],
+					"sid": 427562481334382
+				}
+			],
+			"sid": 377735471142794
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Cerita abaca_Baris ke-13",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 795632357028838,
+							"parameters": {
+								"object": "Benar_Cek"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Home_test_na",
+							"sid": 174819595881214,
+							"parameters": {
+								"instance-variable": "Baris",
+								"comparison": 0,
+								"value": "2"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 231423427770167
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 638822647367763,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "cerita2_tana",
+							"sid": 585206737283470,
+							"parameters": {
+								"animation": "\"benar\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 481499917455579,
+							"parameters": {
+								"audio-file": "Correct Sound",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"korek2\""
+							}
+						}
+					],
+					"sid": 451649015734918
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 629182950766067,
+							"parameters": {
+								"tag": "\"korek2\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 554696673298973,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 786647066373968,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 589995177582191,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 462306349610703,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 543457438182279,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 481834049809813,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 919897715557417,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 908205538938613,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 666101595423243,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 813551982188906,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 344689572590773
+				},
+				{
+					"eventType": "comment",
+					"text": "Penilaian ke-2_Bintang Cara Baca"
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Penilaian abaca_Bintang Cara Baca13",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 509571079159441,
+									"parameters": {
+										"object": "Bintang1_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 881501182698720,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 781712013896134
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 102958225095703,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 613102365431466,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 874534944752079,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 647838432274924,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 484251108536624,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 842191177606401,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 474887591391951,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 925505035151040
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 578386077828746,
+									"parameters": {
+										"object": "Bintang2_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 254296916441646,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 140365106184861
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 839402093887156,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 668448111487753,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 141407519710637,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 432189749245813,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 278981036883101,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 261091030567498,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 589763780539356,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 435444311402552
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 173624306817056,
+									"parameters": {
+										"object": "Bintang3_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 340208136490185,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 774206052887211
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 786460195882266,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "3"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 860344022073917,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 539003715919893,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 189873701041334,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 531611329780108,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 526124689437634,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 116644342454641,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 957662728607452
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 242228245768999,
+									"parameters": {
+										"object": "Bintang4_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 734829027167964,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 796812999618531
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 565738696325396,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "4"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 203729666299159,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 937566629805217,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 533611124533407,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 310693242316023,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 579353154520017,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 639638211961620,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 731930484769727
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 119540252272114,
+									"parameters": {
+										"object": "Bintang5_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 146726118554862,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 849444818158102
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 973447367729487,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "5"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 516641406152673,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 205017932344653,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 329737470065013,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 885620262737484,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 864818173313138,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 739455408604983,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 998580099061618
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 463257840937672,
+									"parameters": {
+										"object": "Next_test_na"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 350864476257751,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Next_test_na",
+									"sid": 763407215785787
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 252108463920368,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cerita3_tana",
+									"sid": 650231111432534,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Benar_Cek",
+									"sid": 949563301514580,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 392334242276036,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 711258491240523,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 255807685905892,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 957386587457414,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 729151387230843,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "add-to-instvar",
+									"objectClass": "Home_test_na",
+									"sid": 978541228962561,
+									"parameters": {
+										"instance-variable": "Baris",
+										"value": "1"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 480346195351082,
+									"parameters": {
+										"variable": "TotalCB_Cerita_tana",
+										"value": "Home_test_na.Bintang_Sementara"
+									}
+								}
+							],
+							"sid": 704302983408046
+						}
+					],
+					"sid": 387890684543527
+				}
+			],
+			"sid": 901772643962358
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Cerita abaca_Baris ke-14",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 614356935580217,
+							"parameters": {
+								"object": "Benar_Cek"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Home_test_na",
+							"sid": 526598032077328,
+							"parameters": {
+								"instance-variable": "Baris",
+								"comparison": 0,
+								"value": "3"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 589265960227205
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 512912000333943,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "cerita3_tana",
+							"sid": 852358171983541,
+							"parameters": {
+								"animation": "\"benar\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 541980837282607,
+							"parameters": {
+								"audio-file": "Correct Sound",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"korek3\""
+							}
+						}
+					],
+					"sid": 585570713234193
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 936747026697966,
+							"parameters": {
+								"tag": "\"korek3\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 783476282241727,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 735944249944794,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 767106727978718,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 526614799454209,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 242073471445129,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 401885906547103,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 784528788683955,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 566053269163090,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 550280956473331,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 278533879254467,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 432508997513006
+				},
+				{
+					"eventType": "comment",
+					"text": "Penilaian ke-3_Bintang Cara Baca"
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Penilaian abaca_Bintang Cara Baca14",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 790674089964348,
+									"parameters": {
+										"object": "Bintang1_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 463523292709730,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 309151552653174
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 424345904325021,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 650143509092270,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 873608384116500,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 171075687946005,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 478176256864472,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 244759550682895,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 416879578049536,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 662295959088493
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 294819580669296,
+									"parameters": {
+										"object": "Bintang2_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 596522351343173,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 872321142905423
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 519061768708183,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 183198133709147,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 214947406031424,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 777014086865622,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 824877682045775,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 743733611366163,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 820558934290791,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 343052709183996
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 862566257930191,
+									"parameters": {
+										"object": "Bintang3_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 890330124118107,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 518613168987859
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 610721903809637,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "3"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 808995247585156,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 965465673069282,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 215763456771991,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 876013875326557,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 163340873754533,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 791114393111062,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 759725174049506
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 967604027681548,
+									"parameters": {
+										"object": "Bintang4_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 127549403008878,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 187845957419624
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 591071289417132,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "4"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 422593173205822,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 529366618510192,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 657509219003620,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 345279810371523,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 735471199933700,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 593148225935592,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 353537412999357
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 453912621284767,
+									"parameters": {
+										"object": "Bintang5_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 975418800818011,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 966366174232811
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 299994411720284,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "5"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 909536106486868,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 458058860540949,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 781692698825867,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 735027043403543,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 608420484816219,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 802407659230083,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 884768446933195
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 413078849428494,
+									"parameters": {
+										"object": "Next_test_na"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 418183124671405,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Next_test_na",
+									"sid": 814170821346561
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 409347819231060,
+									"parameters": {
+										"variable": "TotalCB_Cerita_tana",
+										"value": "Home_test_na.Bintang_Sementara"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 530085550726272,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cerita4_tana",
+									"sid": 139377718690476,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Benar_Cek",
+									"sid": 915750994027545,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 460393330316929,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 571661320386446,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 705924812671554,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 428772526198464,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 888712422299500,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "add-to-instvar",
+									"objectClass": "Home_test_na",
+									"sid": 510779589914691,
+									"parameters": {
+										"instance-variable": "Baris",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 945565884764159
+						}
+					],
+					"sid": 407240681676343
+				}
+			],
+			"sid": 801705800728056
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Cerita abaca_Baris ke-15",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Cerita Baris ke-4"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 603921827555436,
+							"parameters": {
+								"object": "Benar_Cek"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Home_test_na",
+							"sid": 352319224583028,
+							"parameters": {
+								"instance-variable": "Baris",
+								"comparison": 0,
+								"value": "4"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 658556808292773
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 740909321438915,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "cerita4_tana",
+							"sid": 622106487662887,
+							"parameters": {
+								"animation": "\"benar\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 700207916810738,
+							"parameters": {
+								"audio-file": "Correct Sound",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"korek4\""
+							}
+						}
+					],
+					"sid": 868933933370164
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 959761102168840,
+							"parameters": {
+								"tag": "\"korek4\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 474004093047354,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 597360757396816,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 744080565254140,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 473495363882552,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 786518660858392,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 838060792005057,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 331389475761608,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 167348224479664,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 610922805336069,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 932408452238642,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 915216711769321
+				},
+				{
+					"eventType": "comment",
+					"text": "Penilaian ke-4_Bintang Cara Baca"
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Penilaian abaca_Bintang Cara Baca15",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 621843801054406,
+									"parameters": {
+										"object": "Bintang1_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 641984687542125,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 730225787959553
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 393099976754204,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 340529826537968,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 231119376964002,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 639812744936332,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 982943334091087,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 666565118171710,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 106734823564209,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 848025896086124
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 965332581556602,
+									"parameters": {
+										"object": "Bintang2_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 485163356046650,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 877947473287627
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 658701436819920,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 174973739126656,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 646569087826755,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 240112983493999,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 177405668843555,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 554285591268836,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 955283269572384,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 854444145525552
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 912474317711914,
+									"parameters": {
+										"object": "Bintang3_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 519104147131439,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 809838580053602
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 797453156015191,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "3"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 893556634417828,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 326359616494625,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 689556617854060,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 754330000054015,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 944281015470925,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 976288149520776,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 821075817961873
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 690177498385374,
+									"parameters": {
+										"object": "Bintang4_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 865495404533442,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 703949452290843
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 840284224504438,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "4"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 414447589759161,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 534580543215517,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 272885011139492,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 342250762170042,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 884159386961993,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 700083708530693,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 750578851511724
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 390967643950505,
+									"parameters": {
+										"object": "Bintang5_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 417756719571199,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 703887262361665
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 891617925686241,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "5"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 552665091384665,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 319793036806124,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 602995084298856,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 463578922240240,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 896052507756077,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 660440612305161,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 536655128710767
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 677585021703621,
+									"parameters": {
+										"object": "Next_test_na"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 742651850475030,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Next_test_na",
+									"sid": 801841438051936
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 833054793696091,
+									"parameters": {
+										"variable": "TotalCB_Cerita_tana",
+										"value": "Home_test_na.Bintang_Sementara"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 678792935249646,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "cerita5_tana",
+									"sid": 568080667360349,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Benar_Cek",
+									"sid": 721343861613904,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 829567486466953,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 460509096865902,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 615519811498998,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 581136166891630,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 264312172830478,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "add-to-instvar",
+									"objectClass": "Home_test_na",
+									"sid": 930736070348754,
+									"parameters": {
+										"instance-variable": "Baris",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 422306631664150
+						}
+					],
+					"sid": 566780410132962
+				}
+			],
+			"sid": 932821428681696
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Cerita abaca_Baris ke-16",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Cerita Baris ke-5"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 172382112229858,
+							"parameters": {
+								"object": "Benar_Cek"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Home_test_na",
+							"sid": 698796137356931,
+							"parameters": {
+								"instance-variable": "Baris",
+								"comparison": 0,
+								"value": "5"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 807229636107965
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Benar_Cek",
+							"sid": 826080116032848,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "cerita5_tana",
+							"sid": 166514298365366,
+							"parameters": {
+								"animation": "\"benar\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 753433863752342,
+							"parameters": {
+								"audio-file": "Correct Sound",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"korek5\""
+							}
+						}
+					],
+					"sid": 950850324945191
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-ended",
+							"objectClass": "Audio",
+							"sid": 954358857186066,
+							"parameters": {
+								"tag": "\"korek5\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 917753642316453,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang1_CaraBaca",
+							"sid": 220151818377764,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 841322593084157,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang2_CaraBaca",
+							"sid": 637670058764732,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 972370433310691,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang3_CaraBaca",
+							"sid": 309232154388046,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 100329283607003,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang4_CaraBaca",
+							"sid": 149211170901076,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 813645956558247,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Bintang5_CaraBaca",
+							"sid": 467323842369213,
+							"parameters": {
+								"animation": "\"abu\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 143502497713431
+				},
+				{
+					"eventType": "comment",
+					"text": "Penilaian ke-5_Bintang Cara Baca"
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Penilaian abaca_Bintang Cara Baca16",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 666540627707515,
+									"parameters": {
+										"object": "Bintang1_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 633693913943861,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 554416185241473
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 604753807652633,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 377833868060563,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 548880535159745,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 821943788232200,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 657920953599244,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 579797706921780,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 979161890655909,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 862652471059624
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 809424924789401,
+									"parameters": {
+										"object": "Bintang2_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 470871813687694,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 858255015644031
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 128606736862727,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 987279765967864,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 985275675653616,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 549572632094711,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 722604833512643,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 571907719514522,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 443836891470241,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 415846911003723
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 856336455959158,
+									"parameters": {
+										"object": "Bintang3_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 134138351624241,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 398227358776339
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 190781667006121,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "3"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 201655472165576,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 367113905866073,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 282986014310559,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 130832682186503,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 782378178072371,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 708591226328619,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 864386253452345
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 280762106038428,
+									"parameters": {
+										"object": "Bintang4_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 377440853393857,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 932953762563092
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 898184931789442,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "4"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 145315649813314,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 545812383130343,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 171933672228023,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 556646693953731,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 856875017814838,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 389034538692107,
+									"parameters": {
+										"animation": "\"abu\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 514040642158041
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 899115246279486,
+									"parameters": {
+										"object": "Bintang5_CaraBaca"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 967453739845926,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 888479222497552
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Home_test_na",
+									"sid": 464298297416152,
+									"parameters": {
+										"instance-variable": "Bintang_Sementara",
+										"value": "5"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Next_test_na",
+									"sid": 353021280725041,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 926560329290318,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 936563685372840,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 923216313681917,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 300200164443579,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 967840622726577,
+									"parameters": {
+										"animation": "\"kuning\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 497272411320866
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-touched-object",
+									"objectClass": "Touch",
+									"sid": 280922264785782,
+									"parameters": {
+										"object": "Next_test_na"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Home_test_na",
+									"sid": 384518179688602,
+									"parameters": {
+										"instance-variable": "Baris",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Next_test_na",
+									"sid": 267437416140664
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 698182872817817,
+									"parameters": {
+										"audio-file": "Test ending",
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"ending\""
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 426283740588631,
+									"parameters": {
+										"variable": "TotalCB_Cerita_tana",
+										"value": "Home_test_na.Bintang_Sementara"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang1_CaraBaca",
+									"sid": 736249499882684,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang2_CaraBaca",
+									"sid": 553832375221465,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang3_CaraBaca",
+									"sid": 975573998277235,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang4_CaraBaca",
+									"sid": 538283939306734,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Bintang5_CaraBaca",
+									"sid": 433006114170171,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 677057455378921
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-ended",
+									"objectClass": "Audio",
+									"sid": 394109968241410,
+									"parameters": {
+										"tag": "\"ending\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 734731216827753,
+									"parameters": {
+										"variable": "CB_cerita_tana",
+										"value": "(TotalCB_Cerita_tana/JumlahSoal_Cerita_tana)"
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 656015311240236,
+									"parameters": {
+										"layout": "Penilaian_ca"
+									}
+								}
+							],
+							"sid": 289222002521652
+						}
+					],
+					"sid": 839010144653164
+				}
+			],
+			"sid": 718073902363627
+		}
+	],
+	"sid": 754643764602876
+}

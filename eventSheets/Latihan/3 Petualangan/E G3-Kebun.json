@@ -1,0 +1,130 @@
+{
+	"name": "E G3-Kebun",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "bg_Speed",
+			"type": "number",
+			"initialValue": "130",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 432216492660719
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 236737827406603
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Kebun_Floor",
+					"sid": 519667221694920,
+					"parameters": {
+						"y": "Kebun_Floor.Y+bg_Speed*dt"
+					}
+				},
+				{
+					"id": "add-child",
+					"objectClass": "Kebun_Floor",
+					"sid": 612604325884566,
+					"parameters": {
+						"child": "Kiri",
+						"transform-x": true,
+						"transform-y": true,
+						"transform-w": true,
+						"transform-h": true,
+						"transform-a": true,
+						"transform-o": true,
+						"transform-z-elevation": true,
+						"transform-visibility": false,
+						"destroy-with-parent": false
+					}
+				},
+				{
+					"id": "add-child",
+					"objectClass": "Kebun_Floor",
+					"sid": 744112167258843,
+					"parameters": {
+						"child": "Kanan",
+						"transform-x": true,
+						"transform-y": true,
+						"transform-w": true,
+						"transform-h": true,
+						"transform-a": true,
+						"transform-o": true,
+						"transform-z-elevation": true,
+						"transform-visibility": false,
+						"destroy-with-parent": false
+					}
+				}
+			],
+			"sid": 332326340075884
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "Kebun_Floor",
+					"sid": 278363189663965,
+					"parameters": {
+						"comparison": 5,
+						"y-co-ordinate": "1080"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-child",
+					"objectClass": "Kebun_Floor",
+					"sid": 810548184798420,
+					"parameters": {
+						"child": "Kiri",
+						"transform-x": true,
+						"transform-y": true,
+						"transform-w": true,
+						"transform-h": true,
+						"transform-a": true,
+						"transform-o": true,
+						"transform-z-elevation": true,
+						"transform-visibility": false,
+						"destroy-with-parent": false
+					}
+				},
+				{
+					"id": "add-child",
+					"objectClass": "Kebun_Floor",
+					"sid": 723360740788474,
+					"parameters": {
+						"child": "Kanan",
+						"transform-x": true,
+						"transform-y": true,
+						"transform-w": true,
+						"transform-h": true,
+						"transform-a": true,
+						"transform-o": true,
+						"transform-z-elevation": true,
+						"transform-visibility": false,
+						"destroy-with-parent": false
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Kebun_Floor",
+					"sid": 553564129608095,
+					"parameters": {
+						"y": "Kebun_Floor.Y-2160"
+					}
+				}
+			],
+			"sid": 826896438488069
+		}
+	],
+	"sid": 678642263436906
+}

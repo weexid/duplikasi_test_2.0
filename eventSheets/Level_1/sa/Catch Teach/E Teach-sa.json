@@ -1,0 +1,238 @@
+{
+	"name": "E Teach-sa",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 238846716254601
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_sa",
+					"sid": 166668546882209,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sa",
+					"sid": 774418954398876,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_sa",
+					"sid": 586221945993370,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_sa",
+					"sid": 627740384693819,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 112430228366862,
+					"parameters": {
+						"audio-file": "1 teach sa tirukan gerakan ular",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 1\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_sa",
+					"sid": 708095934509821,
+					"parameters": {
+						"animation": "\"S2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 734458941160560
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 148021413296435,
+					"parameters": {
+						"tag": "\"teach 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 688754377589312,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_sa",
+					"sid": 130609607082782,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 238869001741093,
+					"parameters": {
+						"audio-file": "2 teach sa clue",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 2\""
+					}
+				}
+			],
+			"sid": 532184607218697
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 831242993651805,
+					"parameters": {
+						"tag": "\"teach 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 724698486961450,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_sa",
+					"sid": 251261947400647,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sa",
+					"sid": 590499118780212,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_sa",
+					"sid": 628980558247034,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 919726665849223,
+					"parameters": {
+						"audio-file": "3 teach sa kenalkan materi",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 3\""
+					}
+				}
+			],
+			"sid": 461467070827728
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 564845386082069,
+					"parameters": {
+						"tag": "\"teach 3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 359279034185368,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_sa",
+					"sid": 978230197567306,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 781537097961180
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 149320380833337,
+					"parameters": {
+						"object": "Next_sa"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_sa",
+					"sid": 452637061960982
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 405989318353213,
+					"parameters": {
+						"layout": "Catch-ra"
+					}
+				}
+			],
+			"sid": 578917850190293
+		}
+	],
+	"sid": 285678304637221
+}

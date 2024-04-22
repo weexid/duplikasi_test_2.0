@@ -1,0 +1,132 @@
+{
+	"name": "3_E Level-fa",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 885721794383959
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kk_peta",
+					"sid": 240412675213603,
+					"parameters": {
+						"animation": "\"Kk_peta_idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 909152474551134,
+					"parameters": {
+						"audio-file": "Bg Music Flat",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 413266027671135
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kk_peta",
+					"sid": 947558908655373,
+					"parameters": {
+						"animation": "\"Kk_peta_idle\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kk_peta",
+					"sid": 564841454940090,
+					"parameters": {
+						"animation": "\"Kk_peta_jalan\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Kk_peta",
+					"sid": 521452506450119,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "256",
+						"end-y": "249",
+						"time": "3",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 948931557946179
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kk_peta",
+					"sid": 927090735364119,
+					"parameters": {
+						"animation": "\"Kk_peta_jalan\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kk_peta",
+					"sid": 212331752064554,
+					"parameters": {
+						"animation": "\"Kk_peta_idle2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 692185491098692
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kk_peta",
+					"sid": 410239600794318,
+					"parameters": {
+						"animation": "\"Kk_peta_idle2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 632775149669685,
+					"parameters": {
+						"layout": "4_Teach-fa"
+					}
+				}
+			],
+			"sid": 122902622036211
+		}
+	],
+	"sid": 109011114610625
+}

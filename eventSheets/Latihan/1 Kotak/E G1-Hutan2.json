@@ -1,0 +1,565 @@
+{
+	"name": "E G1-Hutan2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "startX2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 146695407540459
+		},
+		{
+			"eventType": "variable",
+			"name": "startY2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 264524808763430
+		},
+		{
+			"eventType": "variable",
+			"name": "count2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 336251582418596
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 447766806741676
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 994931772877174
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 616310421802023,
+					"parameters": {
+						"layer": "5",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 743358780159838,
+					"parameters": {
+						"variable": "count",
+						"value": "Sukat.Count"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "FrameDaun1",
+					"sid": 178624082026235,
+					"parameters": {
+						"instance-variable": "use",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JawabanAbu3",
+					"sid": 665787548802642,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FrameDaun1",
+					"sid": 790081719223945,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sukat",
+					"sid": 261688992328158,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Timer2",
+					"sid": 180651891393637,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TombolSuara",
+					"sid": 238171137435885,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Star_1",
+					"sid": 923146294165689,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Benar",
+					"sid": 774959985572031,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Salah",
+					"sid": 344728223906691,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Gorila_Sprite2",
+					"sid": 766786010337526,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"jalan\"",
+						"property": "position",
+						"end-x": "50",
+						"end-y": "939",
+						"time": "35",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "yes",
+						"ping-pong": "no",
+						"repeat-count": "10"
+					}
+				}
+			],
+			"sid": 251883658574953
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 866697572536950,
+					"parameters": {
+						"object": "TombolSuara"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 407089217781004,
+					"parameters": {
+						"audio-file": "banana",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 759033188443882
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 163833838210501,
+					"parameters": {
+						"object": "Sukat"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "FrameDaun1",
+					"sid": 704267238263158,
+					"parameters": {
+						"instance-variable": "use"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "pick-random-instance",
+					"objectClass": "System",
+					"sid": 141220868777906,
+					"parameters": {
+						"object": "FrameDaun1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Sukat",
+					"sid": 792150955044197,
+					"parameters": {
+						"object": "FrameDaun1",
+						"image-point-optional": "0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "FrameDaun1",
+					"sid": 306015393066430,
+					"parameters": {
+						"instance-variable": "use",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 132388632224873
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drag-start",
+					"objectClass": "Sukat",
+					"sid": 292927059079728,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 981845035721557,
+					"parameters": {
+						"variable": "startX",
+						"value": "Sukat.X"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 912155861359200,
+					"parameters": {
+						"variable": "startY",
+						"value": "Sukat.Y"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "Sukat",
+					"sid": 940744000839267
+				}
+			],
+			"sid": 577570349885291
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sukat",
+					"sid": 210111135153668,
+					"behaviorType": "DragDrop"
+				}
+			],
+			"actions": [],
+			"sid": 310037593077159,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sukat",
+							"sid": 608002968060387,
+							"parameters": {
+								"object": "JawabanAbu3"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Sukat",
+							"sid": 429875383760795,
+							"parameters": {
+								"instance-variable": "check",
+								"comparison": 0,
+								"value": "JawabanAbu3.check"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 995369491196498,
+							"parameters": {
+								"variable": "count",
+								"value": "1"
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Sukat",
+							"sid": 212498640148041,
+							"parameters": {
+								"object": "Star_1",
+								"layer": "0",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sukat",
+							"sid": 560814922727651,
+							"behaviorType": "DragDrop",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "Sukat",
+							"sid": 532351114405877,
+							"parameters": {
+								"object": "JawabanAbu3",
+								"image-point-optional": "0"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "JawabanAbu3",
+							"sid": 742566167583942,
+							"parameters": {
+								"animation": "\"hijau\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 762333783504156
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 403012810939348
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sukat",
+							"sid": 376671520223567,
+							"parameters": {
+								"x": "startX",
+								"y": "startY"
+							}
+						}
+					],
+					"sid": 227224819303348
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 443252578908474,
+					"parameters": {
+						"variable": "count",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 229974671175901
+				}
+			],
+			"actions": [
+				{
+					"id": "set-active",
+					"objectClass": "Benar",
+					"sid": 548082588862311,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "active"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Benar",
+					"sid": 564538670588425,
+					"parameters": {
+						"x": "960",
+						"y": "515"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 413839735854129,
+					"parameters": {
+						"layer": "5",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 372627078855736
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-screen",
+					"objectClass": "Gorila_Sprite2",
+					"sid": 832454325470357,
+					"disabled": true
+				}
+			],
+			"actions": [],
+			"sid": 782710591197045,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Gorila_Sprite2",
+							"sid": 867010549294958,
+							"parameters": {
+								"instance-variable": "move",
+								"comparison": 0,
+								"value": "\"right\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Gorila_Sprite2",
+							"sid": 122100070257783,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 816819765674352,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-by-wall",
+									"objectClass": "Gorila_Sprite2",
+									"sid": 591249636224197,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Gorila_Sprite2",
+									"sid": 536646731017835,
+									"parameters": {
+										"instance-variable": "move",
+										"value": "\"left\""
+									}
+								}
+							],
+							"sid": 980433144400330
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Gorila_Sprite2",
+							"sid": 332987203276557,
+							"parameters": {
+								"instance-variable": "move",
+								"comparison": 0,
+								"value": "\"left\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Gorila_Sprite2",
+							"sid": 618821671889594,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 713160562617982,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-by-wall",
+									"objectClass": "Gorila_Sprite2",
+									"sid": 260904287582442,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "left"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Gorila_Sprite2",
+									"sid": 589167591623161,
+									"parameters": {
+										"instance-variable": "move",
+										"value": "\"right\""
+									}
+								}
+							],
+							"sid": 509178308004120
+						}
+					]
+				}
+			]
+		}
+	],
+	"sid": 670081327723518
+}

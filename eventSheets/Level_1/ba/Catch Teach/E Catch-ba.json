@@ -1,0 +1,859 @@
+{
+	"name": "E Catch-ba",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 152438497805369
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Beruang1_muncul",
+					"sid": 978459489693829,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Beruang2_muncul",
+					"sid": 988797427458040,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Beruang3_muncul",
+					"sid": 314505089077480,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sembunyi1",
+					"sid": 831236739881189,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sembunyi2",
+					"sid": 925296513456853,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sembunyi3",
+					"sid": 692791385610050,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "b_line",
+					"sid": 480446866537571,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 424186331321409,
+					"parameters": {
+						"audio-file": "1 catch ba narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"1catch\""
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Beruang_jalan_ba",
+					"sid": 365803902628959,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"jalan\"",
+						"property": "position",
+						"end-x": "935",
+						"end-y": "760",
+						"time": "4",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ba",
+					"sid": 577946140442732,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 906855347277747
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Beruang_jalan_ba",
+					"sid": 198956279974557,
+					"parameters": {
+						"animation": "\"jalan\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Beruang_jalan_ba",
+					"sid": 387762841808461,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 692601293117441
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 400792777504058,
+					"parameters": {
+						"tag": "\"1catch\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 927535198174915,
+					"parameters": {
+						"audio-file": "ini namanya beruang",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"ini beruang\""
+					}
+				}
+			],
+			"sid": 815342404208763
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 910456643087867,
+					"parameters": {
+						"tag": "\"ini beruang\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 797676856266256,
+					"parameters": {
+						"audio-file": "Tinggi dan perut gendut",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"tinggi dan gendut\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "b_line",
+					"sid": 407599739128679,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "b_line",
+					"sid": 283781315347287,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 473091554540755
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 338291428635423,
+					"parameters": {
+						"tag": "\"tinggi dan gendut\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 603082194291293,
+					"parameters": {
+						"audio-file": "main petak umpet",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"petak umpet\""
+					}
+				}
+			],
+			"sid": 277932356948105
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 749285813288157,
+					"parameters": {
+						"tag": "\"petak umpet\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "b_line",
+					"sid": 784148862159884,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 192509521476143,
+					"parameters": {
+						"audio-file": "mereka katakan",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"mereka katakan\""
+					}
+				}
+			],
+			"sid": 370430704070729
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 266680168129933,
+					"parameters": {
+						"tag": "\"mereka katakan\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 414401752260118,
+					"parameters": {
+						"audio-file": "baa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"baa\""
+					}
+				}
+			],
+			"sid": 426176705622343
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 926157080183054,
+					"parameters": {
+						"tag": "\"baa\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Beruang_jalan_ba",
+					"sid": 245360998160969,
+					"parameters": {
+						"animation": "\"ba\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_ba",
+					"sid": 660573234454109,
+					"parameters": {
+						"animation": "\"cilukba\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 465072256934390
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 135913526963639,
+					"parameters": {
+						"tag": "\"baa\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Beruang_jalan_ba",
+					"sid": 466044421298215,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_ba",
+					"sid": 477681853683804,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 540604287927128,
+					"parameters": {
+						"audio-file": "4 catch ba narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"4catch\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 244460668904168,
+					"parameters": {
+						"seconds": "2"
+					}
+				}
+			],
+			"sid": 873823052493132
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 326204809756701,
+					"parameters": {
+						"tag": "\"4catch\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Beruang_jalan_ba",
+					"sid": 847366069142536,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 954588840051792,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sembunyi1",
+					"sid": 497405554398372,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 413876802806756,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sembunyi2",
+					"sid": 353598639379351,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 563608537634006,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sembunyi3",
+					"sid": 228383181111534,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 730888329642299,
+					"parameters": {
+						"audio-file": "5 catch ba narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"klik beruang\""
+					}
+				}
+			],
+			"sid": 578140888429107
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 801095899192191,
+					"parameters": {
+						"object": "Sembunyi1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Sembunyi1",
+					"sid": 840155120303967
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sembunyi1",
+					"sid": 385947349956439,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Beruang1_muncul",
+					"sid": 973097072586790,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Beruang1_muncul",
+					"sid": 607676889364979,
+					"parameters": {
+						"animation": "\"cilukba\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 714306657502968,
+					"parameters": {
+						"audio-file": "Correct Sound_ba",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"benar\""
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ba",
+					"sid": 604428538224233,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 790341158608650
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Beruang1_muncul",
+					"sid": 467810638520736,
+					"parameters": {
+						"animation": "\"cilukba\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Beruang1_muncul",
+					"sid": 151202236522935,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 329328782117636
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 509521653911274,
+					"parameters": {
+						"object": "Sembunyi2"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Sembunyi2",
+					"sid": 150435081055780
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 500965810218438,
+					"parameters": {
+						"audio-file": "Correct Sound_ba",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"benar\""
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ba",
+					"sid": 253778684708899,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sembunyi2",
+					"sid": 295316958557884,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Beruang2_muncul",
+					"sid": 328156960951067,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Beruang2_muncul",
+					"sid": 948223407744842,
+					"parameters": {
+						"animation": "\"cilukba\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 563721301583560
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Beruang2_muncul",
+					"sid": 767745636211824,
+					"parameters": {
+						"animation": "\"cilukba\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Beruang2_muncul",
+					"sid": 378594201662867,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 321480665717733
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 610246078940349,
+					"parameters": {
+						"object": "Sembunyi3"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Sembunyi3",
+					"sid": 343931533445568
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 862989537312486,
+					"parameters": {
+						"audio-file": "Correct Sound_ba",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"benar\""
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ba",
+					"sid": 704114582465528,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sembunyi3",
+					"sid": 486767170712291,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Beruang3_muncul",
+					"sid": 879515928024523,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Beruang3_muncul",
+					"sid": 300915854634478,
+					"parameters": {
+						"animation": "\"cilukba\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 534843046057713
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Beruang3_muncul",
+					"sid": 187224174382228,
+					"parameters": {
+						"animation": "\"cilukba\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Beruang3_muncul",
+					"sid": 213418817265742,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 776731930419965
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Home_ba",
+					"sid": 917731524572716,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Home_ba",
+					"sid": 418150266718072,
+					"parameters": {
+						"instance-variable": "Play_narator"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Home_ba",
+					"sid": 872062009369957,
+					"parameters": {
+						"instance-variable": "Play_narator",
+						"value": "true"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 679111088132618,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 519428473277975,
+					"parameters": {
+						"audio-file": "6 catch ba narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 6\""
+					}
+				}
+			],
+			"sid": 415625163366184
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 951234472983328,
+					"parameters": {
+						"tag": "\"catch 6\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ba",
+					"sid": 749454485611353,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 984432974467801
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 500777288231450,
+					"parameters": {
+						"object": "Next_ba"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_ba",
+					"sid": 495973704311385
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 534481713745886,
+					"parameters": {
+						"layout": "Teach-ba"
+					}
+				}
+			],
+			"sid": 692104732228315
+		}
+	],
+	"sid": 310065698335897
+}

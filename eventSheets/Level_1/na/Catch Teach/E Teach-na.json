@@ -1,0 +1,213 @@
+{
+	"name": "E Teach-na",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 737932661698700
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "na",
+					"sid": 445342360800933,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_na",
+					"sid": 777286900106022,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_na",
+					"sid": 639825694882271,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_na",
+					"sid": 688254737317489,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 260283001784753,
+					"parameters": {
+						"audio-file": "1 teach na",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 1\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ai_dadah_na",
+					"sid": 601612140219760,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 682142687334876
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 182942596584315,
+					"parameters": {
+						"tag": "\"teach 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 385348285276357,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 145938121780956,
+					"parameters": {
+						"audio-file": "2 Teach na bagus",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 2\""
+					}
+				}
+			],
+			"sid": 359937957153901
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 951763183311679,
+					"parameters": {
+						"tag": "\"teach 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 814706287236311,
+					"parameters": {
+						"audio-file": "3 Teach na",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 3\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "na",
+					"sid": 416380898805116,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_na",
+					"sid": 951227282677472,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_na",
+					"sid": 939489099321433,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 412166146021957
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 751361450988837,
+					"parameters": {
+						"tag": "\"teach 3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_na",
+					"sid": 597379151377393,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 985584304758896
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 497205222205232,
+					"parameters": {
+						"object": "Next_na"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_na",
+					"sid": 191295231324121
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 579507720972824,
+					"parameters": {
+						"layout": "Catch-sa"
+					}
+				}
+			],
+			"sid": 917610947946154
+		}
+	],
+	"sid": 818505801135673
+}

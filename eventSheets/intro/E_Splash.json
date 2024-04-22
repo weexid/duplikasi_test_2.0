@@ -1,0 +1,55 @@
+{
+	"name": "E_Splash",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Splash",
+					"sid": 575248439308815,
+					"parameters": {
+						"animation": "\"Animation 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 761848212788051,
+					"parameters": {
+						"layout": "Intro_Tenda"
+					}
+				}
+			],
+			"sid": 884647629495812
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 799564941113364
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 105119515947360,
+					"parameters": {
+						"audio-file": "anemone intro",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 262338849184854
+		}
+	],
+	"sid": 348964470166260
+}

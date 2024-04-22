@@ -1,0 +1,922 @@
+{
+	"name": "E Catch-ka",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 128809325422498
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 248088852109698,
+					"parameters": {
+						"audio-file": "1 Catch ka  narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 1\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki1",
+					"sid": 733301425028349,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki2",
+					"sid": 752058777577301,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki3",
+					"sid": 462036681310665,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki1a",
+					"sid": 792211861094159,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki2a",
+					"sid": 604424210252526,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki3a",
+					"sid": 656470169348776,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki4",
+					"sid": 251139645993292,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki5",
+					"sid": 262195772867309,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki6",
+					"sid": 257543418747906,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki4a",
+					"sid": 217595172277214,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki5a",
+					"sid": 908970563714878,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki6a",
+					"sid": 362365065497862,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_hide1",
+					"sid": 463001603289536,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_hide2",
+					"sid": 965055529851395,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_keluar_ka",
+					"sid": 808679226857004,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ka",
+					"sid": 666222707135868,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 588455697839555
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 771684134199380,
+					"parameters": {
+						"tag": "\"catch 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki1",
+					"sid": 917886666794348,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Jejak_kaki1",
+					"sid": 908171755076293,
+					"parameters": {
+						"animation": "\"kaki 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 506788855181730,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki2",
+					"sid": 504476941726059,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Jejak_kaki2",
+					"sid": 443302954830549,
+					"parameters": {
+						"animation": "\"kaki 2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 311639668931850,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki3",
+					"sid": 492266663960808,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Jejak_kaki3",
+					"sid": 585467490599329,
+					"parameters": {
+						"animation": "\"kaki 3\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 774823491526933,
+					"parameters": {
+						"audio-file": "2 Catch ka narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 2\""
+					}
+				}
+			],
+			"sid": 307577580078713
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 223760214309167,
+					"parameters": {
+						"tag": "\"catch 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "remove-layer",
+					"objectClass": "System",
+					"sid": 143300292049064,
+					"parameters": {
+						"layer": "\"Kaki depan Noklik\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki1a",
+					"sid": 760054172064916,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki2a",
+					"sid": 710498797020917,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki3a",
+					"sid": 777858167263298,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 194385663857993
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 836576680085081,
+					"parameters": {
+						"object": "Jejak_kaki1a"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Jejak_kaki1a",
+					"sid": 496511307179087
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 791807911509570,
+					"parameters": {
+						"audio-file": "Correct Sound_ka",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki1a",
+					"sid": 952326969441704,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ka",
+					"sid": 488132787596531,
+					"parameters": {
+						"instance-variable": "Komplet_depan",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 771465409409138
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 752548968585702,
+					"parameters": {
+						"object": "Jejak_kaki2a"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Jejak_kaki2a",
+					"sid": 542505613289390
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ka",
+					"sid": 275154704540295,
+					"parameters": {
+						"instance-variable": "Komplet_depan",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 921435119154330,
+					"parameters": {
+						"audio-file": "Correct Sound_ka",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki2a",
+					"sid": 373712239530857,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 886147312999456
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 930791173493488,
+					"parameters": {
+						"object": "Jejak_kaki3a"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Jejak_kaki3a",
+					"sid": 211709859848236
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ka",
+					"sid": 637316507963621,
+					"parameters": {
+						"instance-variable": "Komplet_depan",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 806159280541732,
+					"parameters": {
+						"audio-file": "Correct Sound_ka",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"korek3\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki3a",
+					"sid": 203445094727018,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 300526795742940
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Home_ka",
+					"sid": 430047299124867,
+					"parameters": {
+						"instance-variable": "Komplet_depan",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Home_ka",
+					"sid": 766727988973400,
+					"parameters": {
+						"instance-variable": "Play_narator_depan"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Home_ka",
+					"sid": 791794059930173,
+					"parameters": {
+						"instance-variable": "Play_narator_depan",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_hide1",
+					"sid": 433348516007834,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_hide2",
+					"sid": 713491615028427,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 263647943690043,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 924206231386456,
+					"parameters": {
+						"audio-file": "klik jejak kaki ka",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"klik jejak\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki4",
+					"sid": 440740459551267,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Jejak_kaki4",
+					"sid": 296544939409046,
+					"parameters": {
+						"animation": "\"kaki 4\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 446506518941328,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki5",
+					"sid": 121691214675806,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Jejak_kaki5",
+					"sid": 740963701622615,
+					"parameters": {
+						"animation": "\"kaki 5\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 189249967585781,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki6",
+					"sid": 729001216268444,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Jejak_kaki6",
+					"sid": 575294390258134,
+					"parameters": {
+						"animation": "\"kaki 6\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 533158200967254
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 337852264401763,
+					"parameters": {
+						"tag": "\"klik jejak\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "remove-layer",
+					"objectClass": "System",
+					"sid": 915962717385754,
+					"parameters": {
+						"layer": "\"Belakang Noklik\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki4a",
+					"sid": 817858075424808,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki5a",
+					"sid": 117368502349213,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki6a",
+					"sid": 652988554944606,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 988055184800404
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 749441650477851,
+					"parameters": {
+						"object": "Jejak_kaki4a"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Jejak_kaki4a",
+					"sid": 568510308183702
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ka",
+					"sid": 914717409931675,
+					"parameters": {
+						"instance-variable": "Komplet_belakang",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 700245555939016,
+					"parameters": {
+						"audio-file": "Correct Sound_ka",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki4a",
+					"sid": 866555523851232,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 131460108611504
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 784266860844538,
+					"parameters": {
+						"object": "Jejak_kaki5a"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Jejak_kaki5a",
+					"sid": 360532549897745
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ka",
+					"sid": 830433647594020,
+					"parameters": {
+						"instance-variable": "Komplet_belakang",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 467050227050274,
+					"parameters": {
+						"audio-file": "Correct Sound_ka",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki5a",
+					"sid": 421247072959589,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 282665629307388
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 193683562581161,
+					"parameters": {
+						"object": "Jejak_kaki6a"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Jejak_kaki6a",
+					"sid": 987723226181785
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ka",
+					"sid": 613380579583949,
+					"parameters": {
+						"instance-variable": "Komplet_belakang",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 550278599636652,
+					"parameters": {
+						"audio-file": "Correct Sound_ka",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"korek3\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jejak_kaki6a",
+					"sid": 194119590267966,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 466383721507978
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Home_ka",
+					"sid": 921393725597105,
+					"parameters": {
+						"instance-variable": "Komplet_belakang",
+						"comparison": 0,
+						"value": "3"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Home_ka",
+					"sid": 595183828905036,
+					"parameters": {
+						"instance-variable": "Play_narator_belakang"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Home_ka",
+					"sid": 902067742620463,
+					"parameters": {
+						"instance-variable": "Play_narator_belakang",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_hide2",
+					"sid": 436374521750523,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Kaka_keluar_ka",
+					"sid": 266563325979044,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "Kaka_keluar_ka",
+					"sid": 407498579934770,
+					"parameters": {
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 391000136978869,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 374828601167491,
+					"parameters": {
+						"audio-file": "3 Catch ka narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 3\""
+					}
+				}
+			],
+			"sid": 370579525942481
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 863295126988338,
+					"parameters": {
+						"tag": "\"catch 3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ka",
+					"sid": 561437727149178,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 920574085320487
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 912956659756311,
+					"parameters": {
+						"object": "Next_ka"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_ka",
+					"sid": 909322329015539
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 815296823113465,
+					"parameters": {
+						"layout": "Teach-ka"
+					}
+				}
+			],
+			"sid": 958586641476714
+		}
+	],
+	"sid": 186399102134068
+}

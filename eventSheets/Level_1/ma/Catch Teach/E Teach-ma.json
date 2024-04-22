@@ -1,0 +1,230 @@
+{
+	"name": "E Teach-ma",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 295797260121176
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ma",
+					"sid": 260050725952246,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_ma",
+					"sid": 573643395230151,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_ma",
+					"sid": 507648758086298,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ma",
+					"sid": 338296209659303,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 578993446931712,
+					"parameters": {
+						"audio-file": "1 teach ma",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 1\""
+					}
+				}
+			],
+			"sid": 173403989911197
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 983030509666970,
+					"parameters": {
+						"tag": "\"teach 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 902917019883142,
+					"parameters": {
+						"audio-file": "2 teach ma",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 2\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_Teach_ma",
+					"sid": 726243572042847,
+					"parameters": {
+						"animation": "\"maa\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 263715797926278
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kaka_Teach_ma",
+					"sid": 681280947652379,
+					"parameters": {
+						"animation": "\"maa\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 366304566690805,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ma",
+					"sid": 862868507068523,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_ma",
+					"sid": 616871011586255,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_ma",
+					"sid": 997443744973634,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_Teach_ma",
+					"sid": 454210990480930,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 587227669522922,
+					"parameters": {
+						"audio-file": "2 teach ma kenalkan ma",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"kenalkan ma\""
+					}
+				}
+			],
+			"sid": 420611353509596
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 760635953122450,
+					"parameters": {
+						"tag": "\"kenalkan ma\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 393031023155387,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ma",
+					"sid": 960661448282297,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 349176633753299
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 511614800241569,
+					"parameters": {
+						"object": "Next_ma"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_ma",
+					"sid": 706262197628245
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 781438321760555,
+					"parameters": {
+						"layout": "Catch-pa"
+					}
+				}
+			],
+			"sid": 790057933479955
+		}
+	],
+	"sid": 511179016095469
+}

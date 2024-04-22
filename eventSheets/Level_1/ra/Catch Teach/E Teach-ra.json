@@ -1,0 +1,176 @@
+{
+	"name": "E Teach-ra",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 417912122549632
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ra",
+					"sid": 614244211188618,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ra",
+					"sid": 433132567124704,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_ra",
+					"sid": 735292074967593,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_ra",
+					"sid": 954672380797034,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 119397833911339,
+					"parameters": {
+						"audio-file": "1 teach ra getarkan lidah",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 1\""
+					}
+				}
+			],
+			"sid": 888971377201230
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 871145214016472,
+					"parameters": {
+						"tag": "\"teach 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 119308175765627,
+					"parameters": {
+						"audio-file": "2 teach ra clue",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 2\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ra",
+					"sid": 666931478453242,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_ra",
+					"sid": 923747311507085,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_ra",
+					"sid": 921053650470845,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 515822441122752
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 610193477661736,
+					"parameters": {
+						"tag": "\"teach 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 329754992878751,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ra",
+					"sid": 779117135492781,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 870938847850166
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 945218199336560,
+					"parameters": {
+						"object": "Next_ra"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_ra",
+					"sid": 650003482236200
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 559632578660192,
+					"parameters": {
+						"layout": "Catch-da"
+					}
+				}
+			],
+			"sid": 320559208774649
+		}
+	],
+	"sid": 189752851036348
+}

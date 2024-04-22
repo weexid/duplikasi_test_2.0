@@ -1,0 +1,990 @@
+{
+	"name": "E Catch-ca",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 658986206632386
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 246642093859980,
+					"parameters": {
+						"audio-file": "1 catch ca narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch1 ca\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cacing1",
+					"sid": 618980872385850,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cacing2",
+					"sid": 216904702556839,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cacing3",
+					"sid": 181987647938829,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cacing4",
+					"sid": 529001616942580,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cacing5",
+					"sid": 236075149405097,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ca",
+					"sid": 513779630426276,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Kaka_ca",
+					"sid": 737796378820902,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"jalan\"",
+						"property": "position",
+						"end-x": "1039",
+						"end-y": "265",
+						"time": "8",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 401284002058745
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kaka_ca",
+					"sid": 502810364699803,
+					"parameters": {
+						"animation": "\"jalan\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_ca",
+					"sid": 857388460261016,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 824787945291984
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 233405201666452,
+					"parameters": {
+						"tag": "\"catch1 ca\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_ca",
+					"sid": 445860738745167,
+					"parameters": {
+						"animation": "\"turun\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 396549331112671
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kaka_ca",
+					"sid": 425517757455288,
+					"parameters": {
+						"animation": "\"turun\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_ca",
+					"sid": 558401659719089,
+					"parameters": {
+						"animation": "\"dialog\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 859307881782177,
+					"parameters": {
+						"audio-file": "1 Catch ca_Siapa namamu",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"siapa namamu\""
+					}
+				}
+			],
+			"sid": 134996085975913
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 192537244505246,
+					"parameters": {
+						"tag": "\"siapa namamu\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "cacing6",
+					"sid": 395009333629339,
+					"parameters": {
+						"animation": "\"dialog diam\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 324013286741914,
+					"parameters": {
+						"audio-file": "1a Catch ca_ Hallo aku cacing",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"halo aku cacing\""
+					}
+				}
+			],
+			"sid": 268805286429791
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 626683078077228,
+					"parameters": {
+						"tag": "\"halo aku cacing\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_ca",
+					"sid": 286905507885995,
+					"parameters": {
+						"animation": "\"dialog2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 357131180328760,
+					"parameters": {
+						"audio-file": "1b Catch ca_ Tentu saja",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"tentu saja\""
+					}
+				}
+			],
+			"sid": 504125833499320
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 918521315909516,
+					"parameters": {
+						"tag": "\"tentu saja\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_ca",
+					"sid": 645418580967223,
+					"parameters": {
+						"animation": "\"bangun\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "cacing6",
+					"sid": 560349775187409,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 963539413964839,
+					"parameters": {
+						"audio-file": "3 catch ca narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"Catch 3\""
+					}
+				}
+			],
+			"sid": 698650815954785
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kaka_ca",
+					"sid": 947431980879719,
+					"parameters": {
+						"animation": "\"bangun\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_ca",
+					"sid": 524857301079837,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 429317811559194
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 438881873072546,
+					"parameters": {
+						"tag": "\"Catch 3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "remove-layer",
+					"objectClass": "System",
+					"sid": 863794520005645,
+					"parameters": {
+						"layer": "\"Cacing Noklik\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cacing1",
+					"sid": 233678945006372,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cacing2",
+					"sid": 853571310148856,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cacing3",
+					"sid": 646348065510050,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cacing4",
+					"sid": 651410028925648,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "cacing5",
+					"sid": 809446203535449,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 193744219941918
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 396147497882109,
+					"parameters": {
+						"object": "cacing1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "cacing1",
+					"sid": 346367080059267
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "cacing1",
+					"sid": 739382252612035,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ca",
+					"sid": 180444956405444,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "cacing1",
+					"sid": 427928662178943,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "cacing1",
+					"sid": 994649650532340,
+					"parameters": {
+						"animation": "\"zoom\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 566382462518190,
+					"parameters": {
+						"audio-file": "Correct Sound_ca",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"benar\""
+					}
+				}
+			],
+			"sid": 641677797333122
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "cacing1",
+					"sid": 705232238140046,
+					"parameters": {
+						"animation": "\"zoom\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "cacing1",
+					"sid": 392452740491665,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 115934909778238
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 924523335724076,
+					"parameters": {
+						"object": "cacing2"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "cacing2",
+					"sid": 876150745672672
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "cacing2",
+					"sid": 661490136202412,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ca",
+					"sid": 435038301653670,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "cacing2",
+					"sid": 645116458998443,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "cacing2",
+					"sid": 395309323537200,
+					"parameters": {
+						"animation": "\"zoom\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 613992109691834,
+					"parameters": {
+						"audio-file": "Correct Sound_ca",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"benar\""
+					}
+				}
+			],
+			"sid": 649774017175197
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "cacing2",
+					"sid": 364349403787715,
+					"parameters": {
+						"animation": "\"zoom\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "cacing2",
+					"sid": 532359569690244,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 453018176750052
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 222050734892179,
+					"parameters": {
+						"object": "cacing3"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "cacing3",
+					"sid": 139513870792202
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "cacing3",
+					"sid": 493137035705709,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ca",
+					"sid": 877966892908380,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "cacing3",
+					"sid": 663508950667141,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 259904672607207,
+					"parameters": {
+						"audio-file": "Correct Sound_ca",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"benar\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "cacing3",
+					"sid": 855687325647351,
+					"parameters": {
+						"animation": "\"zoom\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 427969381095445
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "cacing3",
+					"sid": 191403926533775,
+					"parameters": {
+						"animation": "\"zoom\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "cacing3",
+					"sid": 746890806416482,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 620400856698381
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 764206818019737,
+					"parameters": {
+						"object": "cacing4"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "cacing4",
+					"sid": 521927532441907
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "cacing4",
+					"sid": 993423295788167,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ca",
+					"sid": 484022301932327,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "cacing4",
+					"sid": 385168371299160,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "cacing4",
+					"sid": 370621292016819,
+					"parameters": {
+						"animation": "\"zoom\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cacing4",
+					"sid": 723261581807644,
+					"parameters": {
+						"x": "1289",
+						"y": "649"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 133347227771877,
+					"parameters": {
+						"audio-file": "Correct Sound_ca",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"benar\""
+					}
+				}
+			],
+			"sid": 283659401674805
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "cacing4",
+					"sid": 515539502862016,
+					"parameters": {
+						"animation": "\"zoom\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "cacing4",
+					"sid": 768232642120499,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cacing4",
+					"sid": 395822068086662,
+					"parameters": {
+						"x": "1341",
+						"y": "861"
+					}
+				}
+			],
+			"sid": 928783279543089
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 927744937499915,
+					"parameters": {
+						"object": "cacing5"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "cacing5",
+					"sid": 377215866553713
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "cacing5",
+					"sid": 569438690497776,
+					"parameters": {
+						"instance-variable": "Terpilih"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ca",
+					"sid": 421330825599026,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "cacing5",
+					"sid": 484953144308235,
+					"parameters": {
+						"instance-variable": "Terpilih",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "cacing5",
+					"sid": 173879898439557,
+					"parameters": {
+						"animation": "\"zoom\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 400254615191963,
+					"parameters": {
+						"audio-file": "Correct Sound_ca",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"benar\""
+					}
+				}
+			],
+			"sid": 345732242842582
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "cacing5",
+					"sid": 144276242990024,
+					"parameters": {
+						"animation": "\"zoom\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "cacing5",
+					"sid": 636246073110415,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 667649515086731
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Home_ca",
+					"sid": 610325636848651,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"comparison": 0,
+						"value": "5"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Home_ca",
+					"sid": 514528523623451,
+					"parameters": {
+						"instance-variable": "Play_narator"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Home_ca",
+					"sid": 662327927767663,
+					"parameters": {
+						"instance-variable": "Play_narator",
+						"value": "true"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 899507514611359,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 700275163758574,
+					"parameters": {
+						"audio-file": "4 catch ca narator ending",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 4\""
+					}
+				}
+			],
+			"sid": 246295540131379
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 699172800918520,
+					"parameters": {
+						"tag": "\"catch 4\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ca",
+					"sid": 851216320252418,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 436693864310725
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 825996028700298,
+					"parameters": {
+						"object": "Next_ca"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_ca",
+					"sid": 508356124323857
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 558186433441968,
+					"parameters": {
+						"layout": "Teach-ca"
+					}
+				}
+			],
+			"sid": 502167518516211
+		}
+	],
+	"sid": 446872784715670
+}

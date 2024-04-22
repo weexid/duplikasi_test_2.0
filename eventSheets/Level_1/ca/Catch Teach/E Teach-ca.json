@@ -1,0 +1,277 @@
+{
+	"name": "E Teach-ca",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 974927235320228
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 912063729721345,
+					"parameters": {
+						"audio-file": "teach 1_ca tirukan gerakan cacing",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach1\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ca",
+					"sid": 508140099821670,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_ca",
+					"sid": 816265331695202,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ca",
+					"sid": 178040860495188,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_ca",
+					"sid": 906081013281791,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "line_huruf_C",
+					"sid": 849792969809511,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 424560508450969
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 247480483927656,
+					"parameters": {
+						"tag": "\"teach1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_teach_ca",
+					"sid": 931718667622052,
+					"parameters": {
+						"animation": "\"jari c\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 825498550742108,
+					"parameters": {
+						"audio-file": "teach 2_yg seperti cacing",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 2\""
+					}
+				}
+			],
+			"sid": 944300604018764
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 295629846258420,
+					"parameters": {
+						"tag": "\"teach 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 503024390761198,
+					"parameters": {
+						"audio-file": "teach 3_ini namanya ca",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 3\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_ca",
+					"sid": 916027351875944,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ca",
+					"sid": 337357853953434,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_ca",
+					"sid": 172814960310684,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "line_huruf_C",
+					"sid": 806504170465003,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "line_huruf_C",
+					"sid": 603726309991772,
+					"parameters": {
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 112435759213016,
+					"parameters": {
+						"audio-file": "teach 3_ini namanya ca",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 3\""
+					}
+				}
+			],
+			"sid": 449287467639389
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 266874926323013,
+					"parameters": {
+						"tag": "\"teach 3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 341685329188648,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 726712937890031,
+					"parameters": {
+						"audio-file": "Baguus_ca",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"bagus\""
+					}
+				}
+			],
+			"sid": 780574068020607
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 682177019475210,
+					"parameters": {
+						"tag": "\"bagus\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ca",
+					"sid": 569642529693709,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 942722212043358
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 555703658618140,
+					"parameters": {
+						"object": "Next_ca"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_ca",
+					"sid": 929115331629726
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 985658107562778,
+					"parameters": {
+						"layout": "Cari Sukat-ca1"
+					}
+				}
+			],
+			"sid": 505143547913317
+		}
+	],
+	"sid": 105679176152394
+}

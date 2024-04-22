@@ -1,0 +1,212 @@
+{
+	"name": "E Teach-pa",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 308274495174057
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "pa",
+					"sid": 407764781522638,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_pa",
+					"sid": 770577827085854,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_pa",
+					"sid": 906842416941103,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_pa",
+					"sid": 508265058215944,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 967491050151200,
+					"parameters": {
+						"audio-file": "5 pa teach1",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 1\""
+					}
+				}
+			],
+			"sid": 231974461257555
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 840789471084569,
+					"parameters": {
+						"tag": "\"teach 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 799448447366302,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 721834785433192,
+					"parameters": {
+						"audio-file": "6 pa teach2",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 2\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "pa",
+					"sid": 766621035695396,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_pa",
+					"sid": 904597960506412,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_pa",
+					"sid": 523578429204275,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 842676033464657
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 994300771554038,
+					"parameters": {
+						"tag": "\"teach 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 131253163338886,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 783903849680091,
+					"parameters": {
+						"audio-file": "7 pa teach3",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 3\""
+					}
+				}
+			],
+			"sid": 727698579565134
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 117959653125437,
+					"parameters": {
+						"tag": "\"teach 3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_pa",
+					"sid": 206323611754820,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 429724210787332
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 239233081566514,
+					"parameters": {
+						"object": "Next_pa"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_pa",
+					"sid": 678172477621005
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 196574620532180,
+					"parameters": {
+						"layout": "Catch-ta"
+					}
+				}
+			],
+			"sid": 664139414476177
+		}
+	],
+	"sid": 115957421899990
+}

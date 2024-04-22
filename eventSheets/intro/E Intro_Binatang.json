@@ -1,0 +1,647 @@
+{
+	"name": "E Intro_Binatang",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 185233075617544
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Sprite_Kaka_Jalan",
+					"sid": 234697500024130,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"walkcenter\"",
+						"property": "position",
+						"end-x": "300",
+						"end-y": "816",
+						"time": "3",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Button_Start_intro",
+					"sid": 296025542725267,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite_Kaka_Jalan",
+					"sid": 455682357681497,
+					"parameters": {
+						"animation": "\"walk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "UlarSembunyi",
+					"sid": 934982295030373,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ular_Keluar",
+					"sid": 787357374905324,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "GajahSembunyi",
+					"sid": 554136298277247,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Gajah_Keluar",
+					"sid": 324639280310186,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BurungSembunyi",
+					"sid": 645217171581843,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Burung_Keluar",
+					"sid": 286112369021287,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SingaSembunyi",
+					"sid": 995291018894160,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Singa_Keluar",
+					"sid": 365636904763947,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BeruangSembunyi",
+					"sid": 937331185826896,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Beruang_Keluar",
+					"sid": 895403535527251,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MonyetSembunyi",
+					"sid": 975318753542500,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Monyet_Keluar",
+					"sid": 798149134232907,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_Pointer_intro",
+					"sid": 310440584361819,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Button_Next_intro",
+					"sid": 490752942706491,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 677865093435945
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "Sprite_Kaka_Jalan",
+					"sid": 457608155156673,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"walkcenter\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite_Kaka_Jalan",
+					"sid": 283764991198107,
+					"parameters": {
+						"animation": "\"idle2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_Pointer_intro",
+					"sid": 810197693893449,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 580389838865632
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 427635126138900,
+					"parameters": {
+						"object": "Button_Start_intro"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Button_Start_intro",
+					"sid": 197938448156572
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 904880596682838,
+					"parameters": {
+						"audio-file": "3 by narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"3 by narator\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Button_Start_intro",
+					"sid": 391394367043105,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Hand_Pointer_intro",
+					"sid": 500946516141025,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 635941623409712
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 176138893367152,
+					"parameters": {
+						"tag": "\"3 by narator\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "UlarSembunyi",
+					"sid": 574647993893381,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "GajahSembunyi",
+					"sid": 413550581579946,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BurungSembunyi",
+					"sid": 937189097207326,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SingaSembunyi",
+					"sid": 742523646759184,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BeruangSembunyi",
+					"sid": 527334688269002,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MonyetSembunyi",
+					"sid": 740295197175013,
+					"parameters": {
+						"visibility": "toggle"
+					}
+				},
+				{
+					"id": "remove-layer",
+					"objectClass": "System",
+					"sid": 192743895780390,
+					"parameters": {
+						"layer": "\"Sembunyi noklik\""
+					}
+				}
+			],
+			"sid": 778870204219503
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 361975757329944,
+					"parameters": {
+						"object": "UlarSembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "UlarSembunyi",
+					"sid": 864535458965866
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "UlarSembunyi",
+					"sid": 656588852181119,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ular_Keluar",
+					"sid": 103861934510379,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_intro",
+					"sid": 191264909336086,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 270226611223790
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 338517539152668,
+					"parameters": {
+						"object": "GajahSembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "GajahSembunyi",
+					"sid": 961740346380207
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_intro",
+					"sid": 222536431570458,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "GajahSembunyi",
+					"sid": 693995340885065,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Gajah_Keluar",
+					"sid": 946875689241470,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 482621811423056
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 466419840529168,
+					"parameters": {
+						"object": "BurungSembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "BurungSembunyi",
+					"sid": 343008784854108
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_intro",
+					"sid": 854731172882989,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BurungSembunyi",
+					"sid": 642021453211610,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Burung_Keluar",
+					"sid": 233178879065826,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 866998842751203
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 393820997967639,
+					"parameters": {
+						"object": "SingaSembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "SingaSembunyi",
+					"sid": 152926513549545
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_intro",
+					"sid": 780390449215281,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "SingaSembunyi",
+					"sid": 436571050192603,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Singa_Keluar",
+					"sid": 634194284318309,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 969782813302999
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 349219940760244,
+					"parameters": {
+						"object": "BeruangSembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "BeruangSembunyi",
+					"sid": 552367017040438
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_intro",
+					"sid": 574555989848475,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BeruangSembunyi",
+					"sid": 879390715485772,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Beruang_Keluar",
+					"sid": 810126111870964,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 591781084076896
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 341491956252070,
+					"parameters": {
+						"object": "MonyetSembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "MonyetSembunyi",
+					"sid": 579289928954024
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_intro",
+					"sid": 935657824646181,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "MonyetSembunyi",
+					"sid": 429761204817035,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Monyet_Keluar",
+					"sid": 588940765333585,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 879199431936970
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Home_intro",
+					"sid": 586914694288982,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Button_Next_intro",
+					"sid": 522683447609198,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 540401407244243
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 154698195251508,
+					"parameters": {
+						"object": "Button_Next_intro"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 666960150301769,
+					"parameters": {
+						"layout": "Catch-a"
+					}
+				}
+			],
+			"sid": 466508106985867
+		}
+	],
+	"sid": 536737414593294
+}

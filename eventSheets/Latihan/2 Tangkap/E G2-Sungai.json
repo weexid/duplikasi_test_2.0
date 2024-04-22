@@ -1,0 +1,213 @@
+{
+	"name": "E G2-Sungai",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Score",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 262283282952209
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 580743593620863
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 158935685853885,
+					"parameters": {
+						"audio-file": "Bg Music Flat2",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Start_G2",
+					"sid": 796987678377689,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 762320067707483
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 977803281528338,
+					"parameters": {
+						"object": "Start_G2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Start_G2",
+					"sid": 817951192169441,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 988543070022677,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 889282896297313,
+							"parameters": {
+								"interval-seconds": "1.0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object-by-name",
+							"objectClass": "System",
+							"sid": 829712756339818,
+							"parameters": {
+								"object-name": "\"Buble\"",
+								"layer": "0",
+								"x": "random(0,1920)",
+								"y": "random(0,1080)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 540447937382505,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 319807003117524,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object-by-name",
+					"objectClass": "System",
+					"sid": 417105213422765,
+					"parameters": {
+						"object-name": "\"Buble\"",
+						"layer": "0",
+						"x": "random(0,1920)",
+						"y": "random(0,1080)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "add-child",
+					"objectClass": "Buble",
+					"sid": 795848410175846,
+					"parameters": {
+						"child": "Gambar",
+						"transform-x": true,
+						"transform-y": true,
+						"transform-w": false,
+						"transform-h": false,
+						"transform-a": true,
+						"transform-o": true,
+						"transform-z-elevation": false,
+						"transform-visibility": true,
+						"destroy-with-parent": true
+					}
+				}
+			],
+			"sid": 126755248092084
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 715479702746069,
+					"parameters": {
+						"object": "Buble"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Buble",
+					"sid": 249456414124484,
+					"parameters": {
+						"object": "Pecah",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Buble",
+					"sid": 143641881525787
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 597363866317119,
+					"parameters": {
+						"variable": "Score",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 153845392895202
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 456847321912803
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 868059652433216,
+					"parameters": {
+						"text": "\"Score\"&Score"
+					}
+				}
+			],
+			"sid": 773021760685443
+		}
+	],
+	"sid": 624600434919923
+}

@@ -1,0 +1,872 @@
+{
+	"name": "E Catch-ta",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 963773419990585
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ta",
+					"sid": 969305246317963,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta1",
+					"sid": 681324918727343,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta2",
+					"sid": 656716279832716,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta3",
+					"sid": 883334288508482,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta4",
+					"sid": 510188977200974,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta5",
+					"sid": 893388327431648,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta6",
+					"sid": 706306515310721,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta7",
+					"sid": 276104632070870,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta8",
+					"sid": 426129201531905,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta9",
+					"sid": 121726494081575,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta10",
+					"sid": 613076457200674,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TaDepan",
+					"sid": 799235070271228,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TaDepan2",
+					"sid": 343591408898279,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ZoomJari",
+					"sid": 517097542733831,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 865677779271344,
+					"parameters": {
+						"audio-file": "1 catch ta narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 1\""
+					}
+				}
+			],
+			"sid": 564772262864704
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 130623527917033,
+					"parameters": {
+						"tag": "\"catch 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Ta1",
+					"sid": 929448927692311,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 149439198684132,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta2",
+					"sid": 112563723512469,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 179181604259870,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta3",
+					"sid": 560590408229756,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 410852821988857,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta4",
+					"sid": 389101058646587,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 357619641976009,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta5",
+					"sid": 493849679311895,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 815010278677325,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 573038123004071,
+					"parameters": {
+						"audio-file": "2 catch ta silangkan jari",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 2\""
+					}
+				}
+			],
+			"sid": 764972425566240
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 842256909228960,
+					"parameters": {
+						"tag": "\"catch 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ZoomJari",
+					"sid": 878014438948349,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_catch_ta",
+					"sid": 199726505021062,
+					"parameters": {
+						"animation": "\"jari tambah\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 850863103458106
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kaka_catch_ta",
+					"sid": 272692702607630,
+					"parameters": {
+						"animation": "\"jari tambah\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ZoomJari",
+					"sid": 708923316953984,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_catch_ta",
+					"sid": 577507596008381,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 438481732834581,
+					"parameters": {
+						"audio-file": "3 catch ta narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 3\""
+					}
+				}
+			],
+			"sid": 175646080571531
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 828069117730563,
+					"parameters": {
+						"tag": "\"catch 3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "remove-layer",
+					"objectClass": "System",
+					"sid": 593292035472652,
+					"parameters": {
+						"layer": "\"Tambah Noklik\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta6",
+					"sid": 541298552726250,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta7",
+					"sid": 810021594303689,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta8",
+					"sid": 487645488502417,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta9",
+					"sid": 170640841862600,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta10",
+					"sid": 815271049885477,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 931680097902170
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 649250831567598,
+					"parameters": {
+						"object": "Ta6"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Ta6",
+					"sid": 287016558770939
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ta",
+					"sid": 114280442483737,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta6",
+					"sid": 710762283511436,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 984985108906572,
+					"parameters": {
+						"audio-file": "Correct Sound_ta",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TaDepan",
+					"sid": 278965030770409,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 657832265805549,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TaDepan",
+					"sid": 196101917328339,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 588790145129710
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 554187471955741,
+					"parameters": {
+						"object": "Ta7"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Ta7",
+					"sid": 202000275413214
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ta",
+					"sid": 395361819318096,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 527766324338730,
+					"parameters": {
+						"audio-file": "Correct Sound_ta",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta7",
+					"sid": 563558493077394,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TaDepan",
+					"sid": 795467643441669,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 773696934830546,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TaDepan",
+					"sid": 911160283947461,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 925439508774562
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 307360019750248,
+					"parameters": {
+						"object": "Ta8"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Ta8",
+					"sid": 560186400859821
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ta",
+					"sid": 603566998808694,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 141639979791283,
+					"parameters": {
+						"audio-file": "Correct Sound_ta",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta8",
+					"sid": 904188148922382,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TaDepan",
+					"sid": 652916302319369,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 778993058245074,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TaDepan",
+					"sid": 108650388261065,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 872464741224960
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 433382390786964,
+					"parameters": {
+						"object": "Ta9"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Ta9",
+					"sid": 371866130874175
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ta",
+					"sid": 204139383222946,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 490669244331447,
+					"parameters": {
+						"audio-file": "Correct Sound_ta",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta9",
+					"sid": 177784807442137,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TaDepan",
+					"sid": 614895875666877,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 304276271511872,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TaDepan",
+					"sid": 371125271814806,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 842034794287446
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 840014210165103,
+					"parameters": {
+						"object": "Ta10"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Ta10",
+					"sid": 336102355496843
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ta",
+					"sid": 674406141395599,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 795093133888253,
+					"parameters": {
+						"audio-file": "Correct Sound_ta",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ta10",
+					"sid": 819323547736132,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TaDepan",
+					"sid": 147488655602751,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 999233687067492,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TaDepan",
+					"sid": 570147843509214,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 450005046643567
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Home_ta",
+					"sid": 535865173311136,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"comparison": 0,
+						"value": "5"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Home_ta",
+					"sid": 184395794785357,
+					"parameters": {
+						"instance-variable": "Play_narator"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Home_ta",
+					"sid": 511041358425297,
+					"parameters": {
+						"instance-variable": "Play_narator",
+						"value": "true"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 909479568768344,
+					"parameters": {
+						"audio-file": "4 catch ta narator ending",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 4\""
+					}
+				}
+			],
+			"sid": 673745424596543
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 286923505887882,
+					"parameters": {
+						"tag": "\"catch 4\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "TaDepan2",
+					"sid": 470088401703613,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ta",
+					"sid": 940711366724280,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 869342881247424
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 683538189165951,
+					"parameters": {
+						"object": "Next_ta"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_ta",
+					"sid": 817830136508106
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 408331676887096,
+					"parameters": {
+						"layout": "Teach-ta"
+					}
+				}
+			],
+			"sid": 980556126194095
+		}
+	],
+	"sid": 939586246152165
+}

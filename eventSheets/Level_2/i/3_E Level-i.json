@@ -1,0 +1,120 @@
+{
+	"name": "3_E Level-i",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 497680233003306
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kk_peta",
+					"sid": 689653447811337,
+					"parameters": {
+						"animation": "\"Kk_peta_idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 685073691350456
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kk_peta",
+					"sid": 923368746358657,
+					"parameters": {
+						"animation": "\"Kk_peta_idle\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kk_peta",
+					"sid": 775563017849823,
+					"parameters": {
+						"animation": "\"Kk_peta_jalan\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Kk_peta",
+					"sid": 204142893608357,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "position",
+						"end-x": "721",
+						"end-y": "640",
+						"time": "3",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 744473072748492
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kk_peta",
+					"sid": 855992799045272,
+					"parameters": {
+						"animation": "\"Kk_peta_jalan\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kk_peta",
+					"sid": 610511661006738,
+					"parameters": {
+						"animation": "\"Kk_peta_idle2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 306429535942838
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kk_peta",
+					"sid": 983274487668272,
+					"parameters": {
+						"animation": "\"Kk_peta_idle2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 640080506561754,
+					"parameters": {
+						"layout": "4_Teach-i"
+					}
+				}
+			],
+			"sid": 692875070685591
+		}
+	],
+	"sid": 606360052073050
+}

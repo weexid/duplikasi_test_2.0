@@ -1,0 +1,763 @@
+{
+	"name": "E Catch-da",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 580369887706025
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Semut_1",
+					"sid": 745444857694429,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Semut_2",
+					"sid": 197782483054021,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Semut_3",
+					"sid": 529008655772533,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Semut_4",
+					"sid": 223581730677272,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Semut_5",
+					"sid": 934600263338430,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Semut_6",
+					"sid": 231280346224682,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pisah_Da_kiri",
+					"sid": 518269662854187,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pisah_Da_kanan",
+					"sid": 164382429449854,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 283697868693556,
+					"parameters": {
+						"audio-file": "1 catch da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 1\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_da",
+					"sid": 203624556568598,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 363592821877954
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 301382992355824,
+					"parameters": {
+						"tag": "\"catch 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 711928203790036,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 615746912194784,
+					"parameters": {
+						"audio-file": "2 catch Da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 2\""
+					}
+				}
+			],
+			"sid": 943511216827080
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 175529317339737,
+					"parameters": {
+						"tag": "\"catch 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Semut_1",
+					"sid": 192846042473249,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"jalan\"",
+						"property": "position",
+						"end-x": "755",
+						"end-y": "923",
+						"time": "11",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semut_1",
+					"sid": 931743216232835,
+					"parameters": {
+						"animation": "\"jalan\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Semut_2",
+					"sid": 454162300043025,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"jalan\"",
+						"property": "position",
+						"end-x": "620",
+						"end-y": "923",
+						"time": "11",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semut_2",
+					"sid": 692883590172305,
+					"parameters": {
+						"animation": "\"jalan\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Semut_3",
+					"sid": 450775258391495,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"jalan\"",
+						"property": "position",
+						"end-x": "500",
+						"end-y": "923",
+						"time": "11",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semut_3",
+					"sid": 733291797344790,
+					"parameters": {
+						"animation": "\"jalan\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Semut_4",
+					"sid": 925514223649698,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"jalan\"",
+						"property": "position",
+						"end-x": "890",
+						"end-y": "923",
+						"time": "11",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semut_4",
+					"sid": 437375420447175,
+					"parameters": {
+						"animation": "\"jalan\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Semut_5",
+					"sid": 401732072171826,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"jalan\"",
+						"property": "position",
+						"end-x": "1050",
+						"end-y": "923",
+						"time": "11",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semut_5",
+					"sid": 403289116194952,
+					"parameters": {
+						"animation": "\"jalan\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Semut_6",
+					"sid": 118794799982473,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"jalan\"",
+						"property": "position",
+						"end-x": "1200",
+						"end-y": "923",
+						"time": "11",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semut_6",
+					"sid": 599907748654866,
+					"parameters": {
+						"animation": "\"jalan\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 827516216463707,
+					"parameters": {
+						"audio-file": "3 catch Da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 3\""
+					}
+				}
+			],
+			"sid": 705730034487375
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 264702045273059,
+					"parameters": {
+						"tag": "\"catch 3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 266486285738875,
+					"parameters": {
+						"audio-file": "4 catch Da baa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 4\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semut_1",
+					"sid": 538311195521362,
+					"parameters": {
+						"animation": "\"ba\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semut_4",
+					"sid": 464401625337877,
+					"parameters": {
+						"animation": "\"ba\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semut_2",
+					"sid": 253315219911545,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semut_3",
+					"sid": 819977103401222,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semut_5",
+					"sid": 774276538487598,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semut_6",
+					"sid": 331838829536642,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 888080942467896
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 796504337769399,
+					"parameters": {
+						"tag": "\"catch 4\""
+					}
+				}
+			],
+			"actions": [],
+			"sid": 626581678678191
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Semut_1",
+					"sid": 303942877137865,
+					"parameters": {
+						"animation": "\"ba\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 341803162640393,
+					"parameters": {
+						"audio-file": "5 catch da narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 5\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Semut_1",
+					"sid": 568538021830405,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Semut_4",
+					"sid": 830116084309697,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Semut_2",
+					"sid": 708513907170153,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Semut_3",
+					"sid": 805996199289931,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Semut_5",
+					"sid": 936126738141486,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Semut_6",
+					"sid": 637074526541895,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pisah_Da_kiri",
+					"sid": 411755838097171,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Pisah_Da_kiri",
+					"sid": 255470939759011,
+					"parameters": {
+						"x": "758",
+						"y": "733"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Pisah_Da_kiri",
+					"sid": 418567491766310,
+					"parameters": {
+						"animation": "\"da\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pisah_Da_kanan",
+					"sid": 576163859209869,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Pisah_Da_kanan",
+					"sid": 281637944959765,
+					"parameters": {
+						"x": "931",
+						"y": "733"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Pisah_Da_kanan",
+					"sid": 271505624542950,
+					"parameters": {
+						"animation": "\"da\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 942484383952491
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Pisah_Da_kanan",
+					"sid": 692381447315880,
+					"parameters": {
+						"animation": "\"da\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Pisah_Da_kanan",
+					"sid": 981463432005670,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"walk kanan\"",
+						"property": "position",
+						"end-x": "1000",
+						"end-y": "733",
+						"time": "4",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Pisah_Da_kanan",
+					"sid": 589472930389136,
+					"parameters": {
+						"animation": "\"walk kanan\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "Pisah_Da_kiri",
+					"sid": 212066960874296,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"walk kiri\"",
+						"property": "position",
+						"end-x": "675",
+						"end-y": "733",
+						"time": "4",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Pisah_Da_kiri",
+					"sid": 771374442402395,
+					"parameters": {
+						"animation": "\"walk kiri\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 556581729357691
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Pisah_Da_kiri",
+					"sid": 178030847981661,
+					"parameters": {
+						"animation": "\"walk kiri\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Pisah_Da_kanan",
+					"sid": 279977469414118,
+					"parameters": {
+						"animation": "\"kosong\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Pisah_Da_kiri",
+					"sid": 268391211775985,
+					"parameters": {
+						"animation": "\"kosong\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Pisah_Da_kiri",
+					"sid": 421090091763897,
+					"disabled": true,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Pisah_Da_kanan",
+					"sid": 924146216760516,
+					"disabled": true,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 492560428335958
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 681963097363720,
+					"parameters": {
+						"object": "Next_da"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_da",
+					"sid": 149479044825152
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 565492388230566,
+					"parameters": {
+						"layout": "Catch-da_2"
+					}
+				}
+			],
+			"sid": 844400211713475
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-outside-layout",
+					"objectClass": "Pisah_Da_kanan",
+					"sid": 506424037347270
+				}
+			],
+			"actions": [],
+			"sid": 170978530376821
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 966719094034549,
+					"parameters": {
+						"tag": "\"catch 5\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 776558929983253,
+					"parameters": {
+						"seconds": "7"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_da",
+					"sid": 291066070301623,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 638513042352119,
+					"parameters": {
+						"audio-file": "6 catch da narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 6\""
+					}
+				}
+			],
+			"sid": 407506632651242
+		}
+	],
+	"sid": 264293685063353
+}

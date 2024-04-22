@@ -1,0 +1,461 @@
+{
+	"name": "E Catch-pa",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 333683595712620
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Papa1_sembunyi",
+					"sid": 863876676343184,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa2_sembunyi",
+					"sid": 502909716850876,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa3_sembunyi",
+					"sid": 200011239556931,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa1_keluar",
+					"sid": 990238994388801,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa2_keluar",
+					"sid": 782735531885740,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa3_keluar",
+					"sid": 791234598129821,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_pa",
+					"sid": 407506547584084,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 922372962029149,
+					"parameters": {
+						"audio-file": "1 pa kaka",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 1\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_teach_pa",
+					"sid": 516329209676210,
+					"parameters": {
+						"animation": "\"halo\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 205633121332005
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kaka_teach_pa",
+					"sid": 384408565416810,
+					"parameters": {
+						"animation": "\"halo\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_teach_pa",
+					"sid": 914470116040007,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 813220709601108,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa_idle",
+					"sid": 920767994409301,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 961243327635238,
+					"parameters": {
+						"audio-file": "2 pa narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 2\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa1_sembunyi",
+					"sid": 555711918006750,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 366793897941961
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 566745408649150,
+					"parameters": {
+						"tag": "\"catch 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 466900902477519,
+					"parameters": {
+						"audio-file": "3 pa narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 3\""
+					}
+				}
+			],
+			"sid": 423577788290946
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 522764875734650,
+					"parameters": {
+						"object": "Papa1_sembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Papa1_sembunyi",
+					"sid": 815815461777663
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Papa1_sembunyi",
+					"sid": 708481742544368,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa1_keluar",
+					"sid": 595962095593036,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 966238668815778,
+					"parameters": {
+						"audio-file": "Correct Sound_pa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 317616403436076,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa1_keluar",
+					"sid": 170754215493879,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa2_sembunyi",
+					"sid": 764015375210410,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 338127666281524
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 859746674586525,
+					"parameters": {
+						"object": "Papa2_sembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Papa2_sembunyi",
+					"sid": 692356097861452
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Papa2_sembunyi",
+					"sid": 863726897038642,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa2_keluar",
+					"sid": 814638024558721,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 797953763909861,
+					"parameters": {
+						"audio-file": "Correct Sound_pa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 330435764545314,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa2_keluar",
+					"sid": 178727927244688,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa3_sembunyi",
+					"sid": 984182565445397,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 282266379463752
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 616213041579539,
+					"parameters": {
+						"object": "Papa3_sembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Papa3_sembunyi",
+					"sid": 891495917562797
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 672533608382625,
+					"parameters": {
+						"audio-file": "Correct Sound_pa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"paa\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa3_sembunyi",
+					"sid": 260955766152845,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Papa3_keluar",
+					"sid": 431403040217511,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 433129158949029
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 516572766422047,
+					"parameters": {
+						"tag": "\"paa\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 564847574026285,
+					"parameters": {
+						"audio-file": "4 pa bagus",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"pa bagus\""
+					}
+				}
+			],
+			"sid": 948267657787576
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 715580988643540,
+					"parameters": {
+						"tag": "\"pa bagus\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_pa",
+					"sid": 282560567077404,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 727690303952303
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 569440159301763,
+					"parameters": {
+						"object": "Next_pa"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_pa",
+					"sid": 758386795721732
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 535970479544625,
+					"parameters": {
+						"layout": "Teach-pa"
+					}
+				}
+			],
+			"sid": 929305288974742
+		}
+	],
+	"sid": 364946661466290
+}

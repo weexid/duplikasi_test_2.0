@@ -1,0 +1,1067 @@
+{
+	"name": "E Catch-ya",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 735545597971202
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_1_sembunyi",
+					"sid": 301548493528969,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_2_sembunyi",
+					"sid": 834027978892653,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_3_sembunyi",
+					"sid": 347437150696823,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_4_sembunyi",
+					"sid": 321060121827855,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_5_sembunyi",
+					"sid": 750464714034855,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_6_sembunyi",
+					"sid": 580663329972769,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 519445841162234,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan2",
+					"sid": 563483979277826,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Y_line_tanduk",
+					"sid": 805897786214154,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ya",
+					"sid": 221872434007080,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Semak_gerak",
+					"sid": 588934486426037,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semak_gerak",
+					"sid": 662403846821320,
+					"parameters": {
+						"animation": "\"diam\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 455503442082157,
+					"parameters": {
+						"audio-file": "1 Catch Ya",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 1\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 839912097003064,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Semak_gerak",
+					"sid": 308724987834438,
+					"parameters": {
+						"animation": "\"gerak\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 581417774369649
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 844742957050814,
+					"parameters": {
+						"object": "Semak_gerak"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Semak_gerak",
+					"sid": 691504365316284
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Semak_gerak",
+					"sid": 783596702389401,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_4_sembunyi",
+					"sid": 799583935066174,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 976934556656653,
+					"parameters": {
+						"audio-file": "2 Catch Ya",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 2\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 144787187486763,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_4_sembunyi",
+					"sid": 155138196469930,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Y_line_tanduk",
+					"sid": 514745009597309,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "Y_line_tanduk",
+					"sid": 397867041477742,
+					"parameters": {
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 908804259123475,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Rusa_depan",
+					"sid": 340858869627809,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 492180778630329,
+					"parameters": {
+						"seconds": "1"
+					}
+				}
+			],
+			"sid": 653389080169981
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 938310465872972,
+					"parameters": {
+						"tag": "\"catch 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Y_line_tanduk",
+					"sid": 691406859804547,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Rusa_depan",
+					"sid": 651888840828073,
+					"parameters": {
+						"animation": "\"angguk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_Ya",
+					"sid": 386412288082126,
+					"parameters": {
+						"animation": "\"angguk\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 291863061776637
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kaka_Ya",
+					"sid": 695353740736162,
+					"parameters": {
+						"animation": "\"angguk\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Rusa_depan",
+					"sid": 253932157500377,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_Ya",
+					"sid": 696901454460596,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 944226249781670,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 176694535619853,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 995767415962375,
+					"parameters": {
+						"audio-file": "3 Catch Ya",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 3\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_1_sembunyi",
+					"sid": 175946526977223,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 558234582271373,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_2_sembunyi",
+					"sid": 376888885340729,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 461675487733257,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_3_sembunyi",
+					"sid": 543288745693229,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 876422883969300,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_4_sembunyi",
+					"sid": 507997058329772,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 721219119025875,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_5_sembunyi",
+					"sid": 634311538592981,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 470678171421669,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_6_sembunyi",
+					"sid": 311878551483194,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 871550190505420
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 161709258112733,
+					"parameters": {
+						"object": "Rusa_1_sembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Rusa_1_sembunyi",
+					"sid": 814859331223995
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ya",
+					"sid": 641074438979939,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 140441001143166,
+					"parameters": {
+						"audio-file": "Correct Sound_ya",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_1_sembunyi",
+					"sid": 407694497505544,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 253440254000261,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Rusa_depan",
+					"sid": 863997346071443,
+					"parameters": {
+						"animation": "\"angguk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 725123896381461,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 873707739278586,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 301783354240323
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 999965407398746,
+					"parameters": {
+						"object": "Rusa_2_sembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Rusa_2_sembunyi",
+					"sid": 669637473469041
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ya",
+					"sid": 712314982367423,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 661782462852203,
+					"parameters": {
+						"audio-file": "Correct Sound_ya",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_2_sembunyi",
+					"sid": 601956025851628,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 289149658350230,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Rusa_depan",
+					"sid": 927476386031338,
+					"parameters": {
+						"animation": "\"angguk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 311613435390077,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 521752924654597,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 509010760768309
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 876379435313262,
+					"parameters": {
+						"object": "Rusa_3_sembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Rusa_3_sembunyi",
+					"sid": 341037959496803
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ya",
+					"sid": 240677738934245,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 774153024999312,
+					"parameters": {
+						"audio-file": "Correct Sound_ya",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_3_sembunyi",
+					"sid": 830080164233157,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 885735286172942,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Rusa_depan",
+					"sid": 585689256539605,
+					"parameters": {
+						"animation": "\"angguk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 261583246966727,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 853990930902484,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 361481362308064
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 223613478283194,
+					"parameters": {
+						"object": "Rusa_4_sembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Rusa_4_sembunyi",
+					"sid": 408856880531079
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ya",
+					"sid": 603054742382967,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 483739736427918,
+					"parameters": {
+						"audio-file": "Correct Sound_ya",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_4_sembunyi",
+					"sid": 172454701505230,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 911094625384672,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Rusa_depan",
+					"sid": 801079733600567,
+					"parameters": {
+						"animation": "\"angguk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 601947384245943,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 991887715721657,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 374998768025031
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 677065398782208,
+					"parameters": {
+						"object": "Rusa_5_sembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Rusa_5_sembunyi",
+					"sid": 843283323268227
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ya",
+					"sid": 354186291941012,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 643679091465005,
+					"parameters": {
+						"audio-file": "Correct Sound_ya",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_5_sembunyi",
+					"sid": 785245250860284,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 928311104511375,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Rusa_depan",
+					"sid": 315267353596545,
+					"parameters": {
+						"animation": "\"angguk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 591865640873690,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 975207305632709,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 807542040399445
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 196638210806047,
+					"parameters": {
+						"object": "Rusa_6_sembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Rusa_6_sembunyi",
+					"sid": 258844838458163
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_ya",
+					"sid": 594443656557989,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 891998490637444,
+					"parameters": {
+						"audio-file": "Correct Sound_ya",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_6_sembunyi",
+					"sid": 157336845932986,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 338606391847065,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Rusa_depan",
+					"sid": 207552242881553,
+					"parameters": {
+						"animation": "\"angguk\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 452609286559755,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan",
+					"sid": 813109875163843,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 712229942978249
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Home_ya",
+					"sid": 924382371860673,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"comparison": 0,
+						"value": "6"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Home_ya",
+					"sid": 379734133821972,
+					"parameters": {
+						"instance-variable": "Play_narator"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Home_ya",
+					"sid": 916860656912605,
+					"parameters": {
+						"instance-variable": "Play_narator",
+						"value": "true"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 368297055377005,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 586263981448866,
+					"parameters": {
+						"audio-file": "4 Catch Ya",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 4\""
+					}
+				}
+			],
+			"sid": 586519138805365
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Audio",
+					"sid": 148247048175675,
+					"parameters": {
+						"tag": "\"catch 4\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Rusa_depan2",
+					"sid": 846835751404464,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Rusa_depan2",
+					"sid": 541224276097518,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ya",
+					"sid": 829318937029310,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 843421254757971
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 552747955661177,
+					"parameters": {
+						"object": "Next_ya"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_ya",
+					"sid": 950110139811262
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 336169596178909,
+					"parameters": {
+						"layout": "Teach-ya"
+					}
+				}
+			],
+			"sid": 807794503944563
+		}
+	],
+	"sid": 136426672293526
+}

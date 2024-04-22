@@ -1,0 +1,328 @@
+{
+	"name": "E Teach-da",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 306122978541795
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "da",
+					"sid": 378793418885246,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_da",
+					"sid": 427417034330760,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_da",
+					"sid": 205069238511320,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_Da",
+					"sid": 716177732143895,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Klik_BA",
+					"sid": 157217172988686,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_DA",
+					"sid": 786219502298282,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_da",
+					"sid": 225509130858409,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 855037362158755,
+					"parameters": {
+						"audio-file": "1a Teach Da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 1\""
+					}
+				}
+			],
+			"sid": 412923089283309
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 590879226826409,
+					"parameters": {
+						"tag": "\"teach 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Klik_BA",
+					"sid": 334558983367161,
+					"parameters": {
+						"animation": "\"baa\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_Da",
+					"sid": 177011909853195,
+					"parameters": {
+						"animation": "\"ba\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 583385772947135,
+					"parameters": {
+						"audio-file": "1b Teach Da baa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 1b\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 771295290968169,
+					"parameters": {
+						"seconds": "3"
+					}
+				}
+			],
+			"sid": 141187713073796
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 158857827515855,
+					"parameters": {
+						"tag": "\"teach 1b\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Klik_DA",
+					"sid": 843047333476156,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Klik_DA",
+					"sid": 347136906914628,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 455701665044372,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Klik_DA",
+					"sid": 501466753274740,
+					"parameters": {
+						"animation": "\"dadah\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_Da",
+					"sid": 184951516996202,
+					"parameters": {
+						"animation": "\"dadah\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 247133166489997,
+					"parameters": {
+						"audio-file": "2 teach da yang berpisah",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 2\""
+					}
+				}
+			],
+			"sid": 431323328969508
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 473088274223380,
+					"parameters": {
+						"tag": "\"teach 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 994469302145599,
+					"parameters": {
+						"audio-file": "3 teach clue da",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 3\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_da",
+					"sid": 450935320790914,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "da",
+					"sid": 691844819018887,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_da",
+					"sid": 356387401843335,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_Da",
+					"sid": 518512793279565,
+					"parameters": {
+						"animation": "\"dadah\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 644935532522419
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 474923552646659,
+					"parameters": {
+						"tag": "\"teach 3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_da",
+					"sid": 628159735967066,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 962221958217573
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 886996086763991,
+					"parameters": {
+						"object": "Next_da"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_da",
+					"sid": 191214979589033
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 562234211802362,
+					"parameters": {
+						"layout": "Catch-ya"
+					}
+				}
+			],
+			"sid": 238918838746569
+		}
+	],
+	"sid": 290688782587643
+}

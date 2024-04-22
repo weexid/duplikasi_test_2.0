@@ -1,0 +1,497 @@
+{
+	"name": "E Catch-ma",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 841709320100381
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Mama1_muncul",
+					"sid": 731660060643777,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mama2_muncul",
+					"sid": 455008685897858,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mama3_muncul",
+					"sid": 928927838002251,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mama3_sembunyi",
+					"sid": 994556698596826,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mama2_sembunyi",
+					"sid": 874427568895386,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mama1_sembunyi",
+					"sid": 921703409786671,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ma",
+					"sid": 942463296843391,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 382333675205688,
+					"parameters": {
+						"audio-file": "1 Catch ma",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 1\""
+					}
+				}
+			],
+			"sid": 471441646414605
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 250612871736538,
+					"parameters": {
+						"tag": "\"catch 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 651193683078203,
+					"parameters": {
+						"audio-file": "2 Catch ma",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 2\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_idle_ma",
+					"sid": 214351649981892,
+					"parameters": {
+						"animation": "\"kenalkan ibu\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 704933981641752
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Kaka_idle_ma",
+					"sid": 135862225288237,
+					"parameters": {
+						"animation": "\"kenalkan ibu\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_idle_ma",
+					"sid": 105521659123883,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 549919429531562
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 208734047952729,
+					"parameters": {
+						"tag": "\"catch 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 377302184341944,
+					"parameters": {
+						"audio-file": "2 catch ma narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 2a\""
+					}
+				}
+			],
+			"sid": 229832701158128
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 426049233064533,
+					"parameters": {
+						"tag": "\"catch 2a\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Mama_idle",
+					"sid": 212939436743503,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mama1_sembunyi",
+					"sid": 824733005805246,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 624377152487522,
+					"parameters": {
+						"audio-file": "3 catch ma narator klik gmbr ibu",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 3\""
+					}
+				}
+			],
+			"sid": 676922861700307
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 859298185951670,
+					"parameters": {
+						"object": "Mama1_sembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Mama1_sembunyi",
+					"sid": 362683323009786
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Mama1_sembunyi",
+					"sid": 257472380451792,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mama1_muncul",
+					"sid": 238393394669918,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 359288917468501,
+					"parameters": {
+						"audio-file": "Correct Sound_ma",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 962634146944257,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mama1_muncul",
+					"sid": 362784533426893,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mama2_sembunyi",
+					"sid": 863322670222197,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 629950787826521
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 589480085332447,
+					"parameters": {
+						"object": "Mama2_sembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Mama2_sembunyi",
+					"sid": 889694234928726
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Mama2_sembunyi",
+					"sid": 836783790709437,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mama2_muncul",
+					"sid": 403970124491019,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 231011528550422,
+					"parameters": {
+						"audio-file": "Correct Sound_ma",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 995948619312899,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mama2_muncul",
+					"sid": 684918224584032,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mama3_sembunyi",
+					"sid": 990113848831111,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 996294229562921
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 823613246898542,
+					"parameters": {
+						"object": "Mama3_sembunyi"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Mama3_sembunyi",
+					"sid": 993117691262211
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Mama3_sembunyi",
+					"sid": 827815570018346,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Mama3_muncul",
+					"sid": 120959450689765,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 671601004167481,
+					"parameters": {
+						"audio-file": "Correct Sound_ma",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"maa\""
+					}
+				}
+			],
+			"sid": 936113153052331
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 912371151189806,
+					"parameters": {
+						"tag": "\"maa\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 334814213937275,
+					"parameters": {
+						"audio-file": "4 catch ma narator ending",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"ma ending\""
+					}
+				}
+			],
+			"sid": 927995683012591
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 621178430954292,
+					"parameters": {
+						"tag": "\"ma ending\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ma",
+					"sid": 893403861534576,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 578721581675163
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 102048034560724,
+					"parameters": {
+						"object": "Next_ma"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_ma",
+					"sid": 769651524114249
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 371823739094405,
+					"parameters": {
+						"layout": "Teach-ma"
+					}
+				}
+			],
+			"sid": 102936517677659
+		}
+	],
+	"sid": 871509202354859
+}

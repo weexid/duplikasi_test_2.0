@@ -1,0 +1,215 @@
+{
+	"name": "E Teach-la",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 627939170441912
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_la",
+					"sid": 650038195064056,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 271319271496861,
+					"parameters": {
+						"audio-file": "1 teach la lihat bintang",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 1\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "la",
+					"sid": 340640387160475,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_la",
+					"sid": 631740390282059,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Line_huruf_l",
+					"sid": 433194046389462,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_la",
+					"sid": 284574474331678,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 198590883063667
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 385472078163092,
+					"parameters": {
+						"tag": "\"teach 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 750549959921861,
+					"parameters": {
+						"audio-file": "2 teach la kenalkan la",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 2\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Line_huruf_l",
+					"sid": 125397872236861,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "Line_huruf_l",
+					"sid": 190501477636876,
+					"parameters": {
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "la",
+					"sid": 629925894248183,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_la",
+					"sid": 475831876761181,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_la",
+					"sid": 973173756245938,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "JariPointer_la",
+					"sid": 650532768776505,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 315004768835631
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 787257478377307,
+					"parameters": {
+						"tag": "\"teach 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 511589672648976,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 721687657017060,
+					"parameters": {
+						"audio-file": "3 teach la narator",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"bagus la\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_la",
+					"sid": 604919364959236,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 884727926972503
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 598979741720759,
+					"parameters": {
+						"object": "Next_la"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 467786757826122,
+					"parameters": {
+						"layout": "Catch-ma"
+					}
+				}
+			],
+			"sid": 282522910425993
+		}
+	],
+	"sid": 334965218806826
+}

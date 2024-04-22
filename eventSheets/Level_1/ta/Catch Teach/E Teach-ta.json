@@ -1,0 +1,241 @@
+{
+	"name": "E Teach-ta",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 634585465305883
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ZoomJari",
+					"sid": 711517670720459,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ta",
+					"sid": 171045210182907,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_ta",
+					"sid": 142498932184973,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ta",
+					"sid": 696023208362143,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 462105212868675,
+					"parameters": {
+						"audio-file": "1 teach ta silangkan jari",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 1\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_ta",
+					"sid": 926692709853277,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 361430599976970
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 976104553660262,
+					"parameters": {
+						"tag": "\"teach 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "ZoomJari",
+					"sid": 207657114706859,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_catch_ta",
+					"sid": 350569918155711,
+					"parameters": {
+						"animation": "\"jari tambah2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 409356163554622,
+					"parameters": {
+						"audio-file": "2 teach ta seperti tanda tambah",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 2\""
+					}
+				}
+			],
+			"sid": 124647351517892
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 548131323107091,
+					"parameters": {
+						"tag": "\"teach 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "JariPointer_ta",
+					"sid": 684931320311162,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ta",
+					"sid": 432369802630487,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Frame_Teach_ta",
+					"sid": 213630016214065,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 534297036700339,
+					"parameters": {
+						"audio-file": "3 teach ta kenalkan materi",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 3\""
+					}
+				}
+			],
+			"sid": 668923432818409
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 187079032975812,
+					"parameters": {
+						"tag": "\"teach 3\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 818484056605066,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 413878351167280,
+					"parameters": {
+						"audio-file": "4 bagus ta",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"teach 4\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_ta",
+					"sid": 248572077800747,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 739189807929667
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 335102739173035,
+					"parameters": {
+						"object": "Next_ta"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_ta",
+					"sid": 636207723171778
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 714649546958388,
+					"parameters": {
+						"layout": "Catch-na"
+					}
+				}
+			],
+			"sid": 504278886519470
+		}
+	],
+	"sid": 624674555911040
+}

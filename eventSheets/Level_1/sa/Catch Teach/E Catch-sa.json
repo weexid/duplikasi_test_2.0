@@ -1,0 +1,965 @@
+{
+	"name": "E Catch-sa",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 228353208255289
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Ular1",
+					"sid": 321486601258009,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ular2",
+					"sid": 415839548736028,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ular3",
+					"sid": 805207849978453,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ular4",
+					"sid": 882514166577297,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ular5",
+					"sid": 437156107628423,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Next_sa",
+					"sid": 940059130634976,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "S_line_ular",
+					"sid": 871480397500128,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 283225193379458,
+					"parameters": {
+						"audio-file": "1 catch sa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 1\""
+					}
+				}
+			],
+			"sid": 386202608717612
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 741625007550564,
+					"parameters": {
+						"tag": "\"catch 1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 258741227133404,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 826254645414286,
+					"parameters": {
+						"audio-file": "2 catch Sa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 2\""
+					}
+				}
+			],
+			"sid": 469004707327820
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 302480337983163,
+					"parameters": {
+						"tag": "\"catch 2\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 355062596416299,
+					"parameters": {
+						"audio-file": "2a catch Sa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 2a\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "S_line_ular",
+					"sid": 959804385847037,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "S_line_ular",
+					"sid": 106997644567684,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 841308832316872
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 615914599735792,
+					"parameters": {
+						"tag": "\"catch 2a\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 317034061992422,
+					"parameters": {
+						"audio-file": "2b catch Sa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 2b\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular_teach",
+					"sid": 592028078336936,
+					"parameters": {
+						"animation": "\"lidah\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 223867573275440
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 561367113583691,
+					"parameters": {
+						"tag": "\"catch 2b\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 184980221001969,
+					"parameters": {
+						"audio-file": "3a catch Sa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 3a\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "S_line_ular",
+					"sid": 874104853722166,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular_teach",
+					"sid": 366191369899514,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 289450662817835
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 815210003453559,
+					"parameters": {
+						"tag": "\"catch 3a\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 391681253287329,
+					"parameters": {
+						"audio-file": "3b catch Sa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 3b\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular_teach",
+					"sid": 929148227639947,
+					"parameters": {
+						"animation": "\"lidah\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_sa",
+					"sid": 605611560508232,
+					"parameters": {
+						"animation": "\"S\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 831969480783832
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 712835075615053,
+					"parameters": {
+						"tag": "\"catch 3b\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 264410808358746,
+					"parameters": {
+						"audio-file": "4a catch",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 4a\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular_teach",
+					"sid": 828946682159254,
+					"parameters": {
+						"animation": "\"lidah\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_sa",
+					"sid": 873542817141087,
+					"parameters": {
+						"animation": "\"bagus\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 622644714129312
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 938893848906755,
+					"parameters": {
+						"tag": "\"catch 4a\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Kaka_sa",
+					"sid": 440493186450059,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 897154058676367,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ular_teach",
+					"sid": 271784854093416,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ular1",
+					"sid": 444005005931700,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular1",
+					"sid": 407338153396120,
+					"parameters": {
+						"animation": "\"diam\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 191624648233829,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ular2",
+					"sid": 269330305685289,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular2",
+					"sid": 332806605452104,
+					"parameters": {
+						"animation": "\"diam\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 866465193795973,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ular3",
+					"sid": 261508294010901,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular3",
+					"sid": 268480345731654,
+					"parameters": {
+						"animation": "\"diam\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 327609815713585,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ular4",
+					"sid": 154657685516832,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular4",
+					"sid": 793901274304732,
+					"parameters": {
+						"animation": "\"diam\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 255587050327632,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular5",
+					"sid": 355777563319405,
+					"parameters": {
+						"animation": "\"diam\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Ular5",
+					"sid": 483856084092448,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 940455460566363,
+					"parameters": {
+						"audio-file": "4b catch",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 4b\""
+					}
+				}
+			],
+			"sid": 868765222734982
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 565869801712529,
+					"parameters": {
+						"object": "Ular1"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Ular1",
+					"sid": 611341696935672
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Ular1",
+					"sid": 453958585877627,
+					"parameters": {
+						"instance-variable": "Klik"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_sa",
+					"sid": 531638063940125,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Ular1",
+					"sid": 686355900681970,
+					"parameters": {
+						"instance-variable": "Klik",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular1",
+					"sid": 353841227117121,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 509192115760646,
+					"parameters": {
+						"audio-file": "Correct Sound_sa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 228752082885788
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 174945051191111,
+					"parameters": {
+						"object": "Ular2"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Ular2",
+					"sid": 860790911369352
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Ular2",
+					"sid": 970611348057087,
+					"parameters": {
+						"instance-variable": "Klik"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_sa",
+					"sid": 658034565916862,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Ular2",
+					"sid": 162195627143000,
+					"parameters": {
+						"instance-variable": "Klik",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular2",
+					"sid": 411483463684837,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 448766027726699,
+					"parameters": {
+						"audio-file": "Correct Sound_sa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 336073244433975
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 589384579344228,
+					"parameters": {
+						"object": "Ular3"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Ular3",
+					"sid": 927507416169168
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Ular3",
+					"sid": 796837873212423,
+					"parameters": {
+						"instance-variable": "Klik"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_sa",
+					"sid": 144474996160382,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Ular3",
+					"sid": 884899716699068,
+					"parameters": {
+						"instance-variable": "Klik",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular3",
+					"sid": 446821359629229,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 139883651225685,
+					"parameters": {
+						"audio-file": "Correct Sound_sa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 664647026085777
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 507811571871996,
+					"parameters": {
+						"object": "Ular4"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Ular4",
+					"sid": 214565672966025
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Ular4",
+					"sid": 449466301167108,
+					"parameters": {
+						"instance-variable": "Klik"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_sa",
+					"sid": 207984632398186,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Ular4",
+					"sid": 686683158366923,
+					"parameters": {
+						"instance-variable": "Klik",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular4",
+					"sid": 105161970873520,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 513888936493580,
+					"parameters": {
+						"audio-file": "Correct Sound_sa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 741433603733535
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 877029183062187,
+					"parameters": {
+						"object": "Ular5"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Ular5",
+					"sid": 854779633375018
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Ular5",
+					"sid": 239260306361438,
+					"parameters": {
+						"instance-variable": "Klik"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Home_sa",
+					"sid": 918027624641917,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Ular5",
+					"sid": 776788516696894,
+					"parameters": {
+						"instance-variable": "Klik",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Ular5",
+					"sid": 682718316922264,
+					"parameters": {
+						"animation": "\"idle\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 612086213644738,
+					"parameters": {
+						"audio-file": "Correct Sound_sa",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 593152129736831
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Home_sa",
+					"sid": 517499191274854,
+					"parameters": {
+						"instance-variable": "Komplet",
+						"comparison": 0,
+						"value": "5"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "Home_sa",
+					"sid": 956091899352582,
+					"parameters": {
+						"instance-variable": "Play_narator"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "Home_sa",
+					"sid": 465316861775520,
+					"parameters": {
+						"instance-variable": "Play_narator",
+						"value": "true"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 205270494901616,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 503528495304010,
+					"parameters": {
+						"audio-file": "5 catch sa ending",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"catch 5\""
+					}
+				}
+			],
+			"sid": 918480666905919
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-ended",
+					"objectClass": "Audio",
+					"sid": 104837622245691,
+					"parameters": {
+						"tag": "\"catch 5\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Next_sa",
+					"sid": 236155318682183,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 674914339396636
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 741094387203701,
+					"parameters": {
+						"object": "Next_sa"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "Next_sa",
+					"sid": 371569200609034
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 815509723592612,
+					"parameters": {
+						"layout": "Teach-sa"
+					}
+				}
+			],
+			"sid": 639905947740605
+		}
+	],
+	"sid": 437354906850043
+}
